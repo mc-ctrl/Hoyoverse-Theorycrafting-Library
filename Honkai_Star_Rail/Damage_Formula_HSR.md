@@ -6,9 +6,9 @@ $$DMG = Base DMG_{Attacker} × DMG Boost Multiplier_{Attacker} × Weaken Multipl
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Ability } × \text { ATK } & \text { if ability scales with ATK } \\
-\text { Ability } × \text { DEF } & \text { if ability scales with DEF } \\
-\text { Ability } × \text { Max HP } & \text { if ability scales with Max HP } 
+\text { Ability Scaling } × \text { ATK } & \text { if ability scales with ATK } \\
+\text { Ability Scaling } × \text { DEF } & \text { if ability scales with DEF } \\
+\text { Ability Scaling } × \text { Max HP } & \text { if ability scales with Max HP } 
 \end{array}}
 $$
 

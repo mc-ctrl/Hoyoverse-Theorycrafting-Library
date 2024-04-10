@@ -7,9 +7,9 @@ $$DMG = Base DMG_{Attacker} × DMG Bouns Multiplier_{Attacker} × CRIT Multiplie
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Skill } × \text { ATK } & \text { if skill scales with ATK } \\
-\text { Skill } × \text { DEF } & \text { if skill scales with DEF } \\
-\text { Skill } × \text { Max HP } & \text { if skill scales with Max HP } 
+\text { Skill Scaling } × \text { ATK } & \text { if skill scales with ATK } \\
+\text { Skill Scaling } × \text { DEF } & \text { if skill scales with DEF } \\
+\text { Skill Scaling } × \text { Max HP } & \text { if skill scales with Max HP } 
 \end{array}}
 $$
 
