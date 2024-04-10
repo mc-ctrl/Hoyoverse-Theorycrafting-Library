@@ -1,5 +1,5 @@
 # Hoyoverse-Theorycrafting-Library
-Repository contains Genshin Impact, Honkai: Star Rail, Zenless Zone Zero game mechanics.
+Repository contains Genshin Impact, Honkai: Star Rail & Zenless Zone Zero game mechanics.
 
 原神、崩坏：星穹铁道和绝区零的机制研究合集。
 
