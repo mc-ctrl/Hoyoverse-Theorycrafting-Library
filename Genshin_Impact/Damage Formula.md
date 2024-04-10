@@ -7,9 +7,9 @@ $$DMG = ((Σ(Base DMG × Base DMG Coefficient) + Additive Base DMG Bouns)) × DM
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Ability } \% \times \text { ATK } & \text { if ability scales with ATK } \\
-\text { Ability } \% \times \text { DEF } & \text { if ability scales with DEF } \\
-\text { Ability } \% \times \text { Max HP } & \text { if ability scales with Max HP } \\
-\text { Ability } \% \times \text { EM } & \text { if ability scales with EM }
+\text { Ability } × \text { ATK } & \text { if ability scales with ATK } \\
+\text { Ability } × \text { DEF } & \text { if ability scales with DEF } \\
+\text { Ability } × \text { Max HP } & \text { if ability scales with Max HP } \\
+\text { Ability } × \text { EM } & \text { if ability scales with EM }
 \end{array}}
 $$
