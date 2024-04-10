@@ -3,6 +3,4 @@ When characters, enemies or some gadgets attack their targets, they generally de
 Note: A single instance of damage cannot exceed 9,999,999.<br>
 # General Damage Formula
 For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is calculated as:<br>
-$$
-DMG = ((Σ(Base DMG × Base DMG Multiplier) + Additive Base DMG Bouns)) × DMG Bouns Multiplier × DEF Multiplier_Target ×  RES Multiplier_Target × Amplifying Multiplier
-$$
+$$DMG = ((Σ(Base DMG × Base DMG Multiplier) + Additive Base DMG Bouns)) × DMG Bouns Multiplier × DEF Multiplier_Target ×  RES Multiplier_Target × Amplifying Multiplier$$
