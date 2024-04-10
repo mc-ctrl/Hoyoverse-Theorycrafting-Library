@@ -13,4 +13,4 @@ $$
 $$
 
 **Base DMG** is the amount of DMG resulted from multiplying the ability's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
-Unless otherwise specified in the skill attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>
+Unless otherwise specified in the ability attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>

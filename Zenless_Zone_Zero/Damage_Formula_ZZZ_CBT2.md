@@ -7,11 +7,11 @@ $$DMG = Base DMG_{Attacker} × DMG Bouns Multiplier_{Attacker} × CRIT Multiplie
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Ability } × \text { ATK } & \text { if ability scales with ATK } \\
-\text { Ability } × \text { DEF } & \text { if ability scales with DEF } \\
-\text { Ability } × \text { Max HP } & \text { if ability scales with Max HP } 
+\text { Skill } × \text { ATK } & \text { if skill scales with ATK } \\
+\text { Skill } × \text { DEF } & \text { if skill scales with DEF } \\
+\text { Skill } × \text { Max HP } & \text { if skill scales with Max HP } 
 \end{array}}
 $$
 
-**Base DMG** is the amount of DMG resulted from multiplying the ability's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
-Unless otherwise specified in the skill attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>
+**Base DMG** is the amount of DMG resulted from multiplying the skill's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
+Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some abilities may scale with more than one stat.<br>
