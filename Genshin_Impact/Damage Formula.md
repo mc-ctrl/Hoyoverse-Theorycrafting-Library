@@ -5,11 +5,9 @@ Note: A single instance of damage cannot exceed 9,999,999.<br>
 For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is calculated as:<br>
 $$DMG = ((Σ(Base DMG × Base DMG Coefficient) + Additive Base DMG Bouns)) × DMG Bouns Multiplier × DEF Multiplier_{Target} ×  RES Multiplier_{Target} × CRIT Multiplier × Amplifying Multiplier$$
 ## Base DMG
-$$
-\text { Base DMG }={\begin{array}{ll}
+$$\text { Base DMG }={\begin{array}{ll}
 \text { Ability } × \text { ATK } & \text { if ability scales with ATK } \\
 \text { Ability } × \text { DEF } & \text { if ability scales with DEF } \\
 \text { Ability } × \text { Max HP } & \text { if ability scales with Max HP } \\
 \text { Ability } × \text { EM } & \text { if ability scales with EM }
-\end{array}}
-$$
+\end{array}}$$
