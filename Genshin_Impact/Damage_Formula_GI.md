@@ -23,4 +23,131 @@ $$Base DMG = 1.8576 × 1400 + 3.7152 × 950 = 6130.08 $$
 The other type of it is the damage bouns from **Spread and Aggravate** Elemental Reactions. When the attacks inflict Dendro or Electro on the target affected by Quicken Aura, the Spread or Aggravate will be triggered with a flat base DMG bouns. The bouns is calculated as:
 $$Flat Base DMG Bouns = Reaction Coefficient × Level Multiplier × (1 + EM Bouns + Reaction Bouns)$$
 For Aggravate, the reaction coefficient is 1.15, for Spread 1.25. The level multiplier scales with attacker's level:
-
+<table>
+<tr>
+<th>Level</th>
+<th>Character</th>
+<th>Enemy or Environment</th>
+<th>Crystallize Shield</th>
+</tr>
+    <tr>
+        <td>1</td>
+        <td>17.165605</td>
+        <td>17.165605</td>
+        <td>91.1791 </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>18.535048</td>
+        <td>18.535048</td>
+        <td>98.707667 </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>19.904854</td>
+        <td>19.904854</td>
+        <td>106.23622 </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>21.274903</td>
+        <td>21.274903</td>
+        <td>113.764771 </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>22.6454</td>
+        <td>22.6454</td>
+        <td>121.293322 </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>24.649613</td>
+        <td>24.649613</td>
+        <td>128.821878 </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>26.640643</td>
+        <td>26.640643</td>
+        <td>136.350422 </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>28.868587</td>
+        <td>28.868587</td>
+        <td>143.878978 </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>31.367679</td>
+        <td>31.367679</td>
+        <td>151.407522 </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>34.143343</td>
+        <td>34.143343</td>
+        <td>158.936078 </td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>37.201</td>
+        <td>37.201</td>
+        <td>169.991484 </td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>40.66</td>
+        <td>40.66</td>
+        <td>181.076253 </td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>44.446668</td>
+        <td>44.446668</td>
+        <td>192.190362 </td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>48.563519</td>
+        <td>48.563519</td>
+        <td>204.048207 </td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>53.74848</td>
+        <td>53.74848</td>
+        <td>215.938996 </td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>59.081897</td>
+        <td>59.081897</td>
+        <td>227.86275 </td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>64.420047</td>
+        <td>64.420047</td>
+        <td>247.685944 </td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>69.724455</td>
+        <td>69.724455</td>
+        <td>267.542105 </td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>75.123137</td>
+        <td>75.123137</td>
+        <td>287.431209 </td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>80.584775</td>
+        <td>80.584775</td>
+        <td>303.826417 </td>
+    </tr>
+</table>
