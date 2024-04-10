@@ -7,12 +7,13 @@ $$DMG = ((Σ(Base DMG × Base DMG Coefficient) + Additive Base DMG Bouns)) × DM
 ## Base DMG
 **Base DMG** is the amount of DMG resulted from multiplying the ability's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
 Unless otherwise specified in the skill attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>
-$$\text { Base DMG }={\begin{array}{ll}
+$$
+\text { Base DMG }={\begin{array}{ll}
 \text { Ability } × \text { ATK } & \text { if ability scales with ATK } \\
 \text { Ability } × \text { DEF } & \text { if ability scales with DEF } \\
 \text { Ability } × \text { Max HP } & \text { if ability scales with Max HP } \\
 \text { Ability } × \text { EM } & \text { if ability scales with EM }
-\end{array}}$$
-<br>
+\end{array}}
+$$
 For example, Nahida's Elemental Skill [All Schemes to Know](https://genshin-impact.fandom.com/wiki/All_Schemes_to_Know) has a Tri-Karma Purification DMG, this DMG scales with both ATK and EM. If your Nahida has 1400 ATK, 950 EM and Level 10 Elemental Skill, the base DMG of Tri-Karma Purification DMG is calculated as:<br>
 $$Base DMG = 1.8576 × 1400 + 3.7152 × 950 = 6130.08 $$
