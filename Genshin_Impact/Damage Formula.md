@@ -6,10 +6,10 @@ For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadg
 $$DMG = ((Σ(Base DMG × Base DMG Coefficient) + Additive Base DMG Bouns)) × DMG Bouns Multiplier × DEF Multiplier_{Target} ×  RES Multiplier_{Target} × CRIT Multiplier × Amplifying Multiplier$$
 ## Base DMG
 $$
-\text { Base DMG }=\left\{\begin{array}{ll}
+\text { Base DMG }={\begin{array}{ll}
 \text { Ability } \% \times \text { ATK } & \text { if ability scales with ATK } \\
 \text { Ability } \% \times \text { DEF } & \text { if ability scales with DEF } \\
 \text { Ability } \% \times \text { Max HP } & \text { if ability scales with Max HP } \\
 \text { Ability } \% \times \text { EM } & \text { if ability scales with EM }
-\end{array}}\right
+\end{array}}
 $$
