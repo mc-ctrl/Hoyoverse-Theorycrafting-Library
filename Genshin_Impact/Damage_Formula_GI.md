@@ -23,4 +23,4 @@ $$Base DMG = 1.8576 × 1400 + 3.7152 × 950 = 6130.08 $$
 The other type of it is the damage bouns from **Spread and Aggravate** Elemental Reactions. When the attacks inflict Dendro or Electro on the target affected by Quicken Aura, the Spread or Aggravate will be triggered with a flat base DMG bouns. The bouns is calculated as:
 $$Flat Base DMG Bouns = Reaction Coefficient × Level Multiplier × (1 + EM Bouns + Reaction Bouns)$$
 For Aggravate, the reaction coefficient is 1.15, for Spread 1.25. The level multiplier scales with attacker's level:
-<iframe src="Level_Multiplier_Reaction.html"></iframe>
+<iframe src="Genshin_Impact\Level_Multiplier_Reaction.html"></iframe>
