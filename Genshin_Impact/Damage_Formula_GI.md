@@ -26,8 +26,8 @@ For Aggravate, the reaction coefficient is 1.15, for Spread 1.25. The level mult
 <table>
 <tr>
 <th>Level</th>
-<th>Character</th>
 <th>Enemy or Environment</th>
+<th>Character</th>
 <th>Crystallize Shield</th>
 </tr>
     <tr>
