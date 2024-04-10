@@ -1,5 +1,6 @@
 **Damage is the most important part of Honkai: Star Rail's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When characters or enemies attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
+Note: HP loss is not damage.<br>
 # General Damage Formula
 For DMG dealt by Abilities, Traces, Eidolons or enemy attacks, the DMG is calculated as:<br>
 $$DMG = Base DMG_{Attacker} × DMG Boost Multiplier_{Attacker} × Weaken Multiplier_{Attacker}  × CRIT Multiplier_{Attacker} × DMG Mitigation Multiplier_{Target} × DMG Taken Multiplier_{Target} × DEF Multiplier_{Target} ×  RES Multiplier_{Target}$$
