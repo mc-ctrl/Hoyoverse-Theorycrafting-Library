@@ -3,7 +3,7 @@ When agents or enemies attack their targets, they generally deal **damage** (abb
 Note: This article is based on CBT2. It's greatly subject to change.<br>
 # General Damage Formula
 For DMG dealt by Skills, Talents or enemy attacks, the DMG is calculated as:<br>
-$$DMG = Base DMG_{Attacker} × DMG Bouns Multiplier_{Attacker} × CRIT Multiplier_{Attacker} × DEF Multiplier_{Target} ×  RES Multiplier_{Target} × Damage Taken Multiplier_{Target} × Stun Taken Multiplier_{Target}$$
+$$DMG = Base DMG_{Attacker} × DMG Bouns Multiplier_{Attacker} × CRIT Multiplier_{Attacker} × DEF Multiplier_{Target} ×  REs Multiplier_{Target} × Damage Taken Multiplier_{Target} × Stun Taken Multiplier_{Target}$$
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
