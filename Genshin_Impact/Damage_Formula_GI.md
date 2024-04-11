@@ -35,7 +35,7 @@ $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace (1\enspace +\enspace Σ
 Note: Kairagi will gain a 80% Damage Reduction shortly after being aggravated, Frostarm Lawachurl will gain the same one during Shield.<br>
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
-$$CRIT\enspace RATE_{Effective}\enspace =\enspace clamp \left \{ 0,\enspace CRIT\enspace RATE,\enspace 1 \right \}$$ 
+$$CRIT\enspace RATE_{Effective}\enspace =\enspace clamp \left\{ 0,\enspace CRIT\enspace RATE,\enspace 1 \right\}$$ 
 The crit multiplier is calculated as:<br>
 
 $$
