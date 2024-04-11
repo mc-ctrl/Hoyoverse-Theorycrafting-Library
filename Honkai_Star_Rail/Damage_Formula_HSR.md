@@ -3,7 +3,7 @@ When characters or enemies attack their targets, they generally deal **damage** 
 Note: HP loss is not damage.<br>
 # General Damage Formula
 For DMG dealt by Abilities, Traces, Eidolons or enemy attacks, the DMG is calculated as:<br>
-$$DMG = Base DMG_{Attacker} × DMG Boost Multiplier_{Attacker} × Weaken Multiplier_{Attacker}  × CRIT Multiplier_{Attacker} × DMG Mitigation Multiplier_{Target} × DMG Taken Multiplier_{Target} × DEF Multiplier_{Target} ×  REs Multiplier_{Target}$$
+$$DMG\enspace =\enspace Base DMG_{Attacker}\enspace ×\enspace DMG Boost Multiplier_{Attacker}\enspace ×\enspace Weaken Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DMG Mitigation Multiplier_{Target}\enspace ×\enspace DMG\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace  REs\enspace Multiplier_{Target}$$
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
