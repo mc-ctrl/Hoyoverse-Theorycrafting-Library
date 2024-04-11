@@ -74,6 +74,10 @@ $$
 $$
 
 <img src="REs_GI.png" alt="REs Multiplier" vertical-align: middle></img>
+And the REs<sub>Effective</sub> is:<br>
+$$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Ingored_{Attacker}$$
+[Enemy REs](https://genshin-impact.fandom.com/wiki/Resistance#Enemy_RES)
+
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage
