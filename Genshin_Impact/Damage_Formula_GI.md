@@ -73,7 +73,7 @@ $$
 \end{array}}
 $$
 
-<img src="REs_GI.png"></img>
+<img src="REs_GI.png" alt="REs Multiplier" vertical-align: middle></img>
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage
