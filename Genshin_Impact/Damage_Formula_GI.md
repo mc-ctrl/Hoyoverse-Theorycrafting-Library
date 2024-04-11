@@ -29,11 +29,11 @@ $$EM\enspace Bouns\enspace =\enspace \frac{5\enspace ×\enspace EM}{EM\enspace +
 Reaction Bouns is a special bouns type for element reaction, it's generally discribed as "The specified type of reaction DMG are increased by bouns%", this type of bouns is directly added to the EM Bouns.<br>
 Assume there is a Level 90 Traveler(Electro) with 1600 ATK, 100 EM and Level 13 [Elemental Burst](https://genshin-impact.fandom.com/wiki/Bellowing_Thunder), his Falling Thunder DMG hits a enemy under Quicken Aura, this damage is increased by [6th Constellation](https://genshin-impact.fandom.com/wiki/World-Shaker). And he was just healed by Baizhu's  [Seamless Shields](https://genshin-impact.fandom.com/wiki/Holistic_Revivification), this Baizhu has 50000+ Max HP without additional constellation. Then this Falling Thunder DMG's total Base DMG Multiplier is calculated as:<br>
 $$total\enspace Base\enspace DMG\enspace Multiplier\enspace =\enspace 0.6970\enspace ×\enspace 1600\enspace ×\enspace 2\enspace +\enspace 1.25\enspace ×\enspace (1\enspace +\enspace \frac{5\enspace ×\enspace 100}{100\enspace +\enspace 1200}\enspace +\enspace 0.4)\enspace ×\enspace 1446.853458\enspace =\enspace 5458.00 $$
-## DMG Bouns
+## DMG Bouns Multiplier
 DMG Bouns refers to all percentage-based DMG bounses, including Elemental, Physical DMG Bounses listed in the stats screen, as well as special percentage-based DMG bonus based on attacktag(Normal/Charged/Plunging Attack, Elemental Skill, Elemental Burst, etc.), all DMG bouns and so on. DMG Taken(Mona's [Elemental Burst](https://genshin-impact.fandom.com/wiki/Stellaris_Phantasm), Ganyu's [4th Constellation](https://genshin-impact.fandom.com/wiki/Westward_Sojourn)) and DMG Reduction(Xingqiu's [Rain Sword](https://genshin-impact.fandom.com/wiki/Westward_Sojourn),Beidou's [burst](https://genshin-impact.fandom.com/wiki/Stormbreaker), etc.) of target effectively add with DMG Bouns:<br>
 $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace (1\enspace +\enspace ΣDMG\enspace Bouns\enspace -\enspace DMG\enspace Reduction_{Target}\enspace +\enspace DMG\enspace Taken_{Taken})$$
 Note: Kairagi will gain a 80% Damage Reduction shortly after being aggravated, Frostarm Lawachurl will gain the same one during Shield.<br>
-## CRIT
+## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so the CRIT RATE<sub>Effective</sub> is clamp{0%, crit rate, 100%}. So the crit multiplier is calculated as:<br>
 
 $$
@@ -75,9 +75,26 @@ $$
 
 <img src="REs_GI.png" alt="REs Multiplier" vertical-align: middle></img>
 And the REs<sub>Effective</sub> is:<br>
-$$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Ingored_{Attacker}$$
+$$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Penetrate_{Attacker}$$
 [Enemy REs](https://genshin-impact.fandom.com/wiki/Resistance#Enemy_RES)
 
+## Amplifying Multiplier
+The amplifying reactions are Vaporize and Melt. Amplifying reactions add extra multipliers to the damage of the attack that triggered the reaction based on the triggering element and the elemental mastery of the triggering character.<br>
+
+$$
+\text { Amplifying Multiplier }={\begin{array}{ll}
+\text { 1.5 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Pyro triggers Melt } \\
+\text { 2 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Cryo triggers Melt } \\
+\text { 1.5 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Hydro triggers Vaporize } \\
+\text { 2 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Pyro triggers Vaporize } \\
+\text { 1} & \text { otherwise} 
+\end{array}}
+$$
+
+For Amplifying Reaction, the EM Bouns is calculated as:
+$$EM\enspace Bouns\enspace =\enspace \frac{2.78\enspace ×\enspace EM}{EM\enspace +\enspace 1400}$$
+## Special Multipliers
+In most articles, general damage formula 
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage

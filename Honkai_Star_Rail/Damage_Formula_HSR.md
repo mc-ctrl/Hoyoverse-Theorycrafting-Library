@@ -15,7 +15,7 @@ $$
 
 **Base DMG** is the amount of DMG resulted from multiplying the ability's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
 Unless otherwise specified in the ability attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>
-## CRIT
+## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so the CRIT RATE<sub>Effective</sub> is clamp{0%, crit rate, 100%}. So the crit multiplier is calculated as:<br>
 
 $$
@@ -50,6 +50,9 @@ $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\ens
 ## REs Multiplier
 REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. It's calculated as:
 $$REs Multiplier = 1 - REs$$
+And the REs<sub>Effective</sub> is:<br>
+$$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Penetrate_{Attacker}$$
+[Damage REs](https://honkai-star-rail.fandom.com/wiki/Damage_RES)
 
 # Special Damage Formula
 ## Break Damage
