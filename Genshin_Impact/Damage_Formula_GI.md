@@ -117,7 +117,18 @@ Note: The Wane directly affects damage percentage, which means it directly multi
 $$v_{x}\enspace =\enspace v_{x0}\enspace ×\enspace (1\enspace -\enspace At), \enspace v_{x}\enspace ≥\enspace 0$$
 $$v_{y}\enspace =\enspace v_{y0}\enspace +\enspace gt$$
 *Please note that v and g are vectors, they have directions.*<br>
-*Actually, many gadgets' movements are in the similiar way, but this is another chapter.*
+*Actually, many gadgets' movements are in the similiar way, but this is another chapter.*<br><br>
+**Multipliers above are only the common ones, multipliers were, are and will be updated.**
 # Special Damage Formula
+For DMG taking in different way, the formula is not entirely the same as general one.<br>
+Multipliers are added, deleted and modified in these DMG. There are Transformative Reactionlike Damage and True Damage:
 ## Transformative Reactionlike Damage
+You may confused with the title, this part is not Transformative Reaction Damage, at least, not entirely. I put a -like after Reaction is to say there are some DMG taking in the similar way with Transformative Reaction Damage. For example, the DMG from [Ocean-Hued Clam](https://genshin-impact.fandom.com/wiki/Ocean-Hued_Clam) works in same way. This kind of DMG has a special tag, IgnoreAttackerProperty.<br>
+For this type of DMG, it has actually the same Damage Formula of general DMG, but some Multipliers are modified:<br>
+### Base DMG
+
 ## True Damage
+
+# Try some exercises
+
+# How to calculate accurately
