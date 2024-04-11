@@ -31,7 +31,7 @@ Assume there is a Level 90 Traveler(Electro) with 1600 ATK, 100 EM and Level 13 
 $$total\enspace Base\enspace DMG\enspace Multiplier\enspace =\enspace 0.6970\enspace ×\enspace 1600\enspace ×\enspace 2\enspace +\enspace 1.25\enspace ×\enspace (1\enspace +\enspace \frac{5\enspace ×\enspace 100}{100\enspace +\enspace 1200}\enspace +\enspace 0.4)\enspace ×\enspace 1446.853458\enspace =\enspace 5458.00 $$
 ## DMG Bouns Multiplier
 DMG Bouns refers to all percentage-based DMG bounses, including Elemental, Physical DMG Bounses listed in the stats screen, as well as special percentage-based DMG bonus based on attacktag(Normal/Charged/Plunging Attack, Elemental Skill, Elemental Burst, etc.), all DMG bouns and so on. DMG Taken(Mona's [Elemental Burst](https://genshin-impact.fandom.com/wiki/Stellaris_Phantasm), Ganyu's [4th Constellation](https://genshin-impact.fandom.com/wiki/Westward_Sojourn)) and DMG Reduction(Xingqiu's [Rain Sword](https://genshin-impact.fandom.com/wiki/Westward_Sojourn),Beidou's [burst](https://genshin-impact.fandom.com/wiki/Stormbreaker), etc.) of target effectively add with DMG Bouns:<br>
-$$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace (1\enspace +\enspace ΣDMG\enspace Bouns\enspace -\enspace DMG\enspace Reduction_{Target}\enspace +\enspace DMG\enspace Taken_{Taken})$$
+$$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace (1\enspace +\enspace ΣDMG\enspace Bouns_{Attacker}\enspace -\enspace DMG\enspace Reduction_{Target}\enspace +\enspace DMG\enspace Taken_{Target})$$
 Note: Kairagi will gain a 80% Damage Reduction shortly after being aggravated, Frostarm Lawachurl will gain the same one during Shield.<br>
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so the CRIT RATE<sub>Effective</sub> is clamp{0%, crit rate, 100%}. So the crit multiplier is calculated as:<br>
@@ -94,7 +94,9 @@ $$
 For Amplifying Reaction, the EM Bouns is calculated as:
 $$EM\enspace Bouns\enspace =\enspace \frac{2.78\enspace ×\enspace EM}{EM\enspace +\enspace 1400}$$
 ## Special Multipliers
-In most articles, general damage formula 
+This part contains some multipliers unusual, they are default value most time, so most players may even not know them.
+### Damage Attenuation Multiplier
+
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage
