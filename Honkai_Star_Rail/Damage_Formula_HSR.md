@@ -29,7 +29,7 @@ $$
 The expectation of CRIT Multiplier is deduced as:<br>
 $$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace RATE_{Effective})\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
 ## DEF Multiplier
-DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:<br>
+DEF Multiplier is the multiplier that Defence(abbreviated as DEF) reduces incoming damage, it's calculated as:<br>
 $$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coeffcient_{Attacker}}$$
 Then the DEF Multiplier is:<br>
 $$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
@@ -40,13 +40,17 @@ $$DEF_{Enemy}\enspace =\enspace 10\enspace ×\enspace Level_{Enemy}\enspace +\en
 ***Note: The Trotter is special, its DEF is 1.5 of general Enemy.***<br>
 As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 (Trotter is 0.4) when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**<br>
 In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:<br>
-$$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction\enspace -\enspace DEF\enspace Ignored)$$
+$$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction_{Target}\enspace -\enspace DEF\enspace Ignored_{Attacker})$$
 Note: DEF<sub>Effective</sub> ≥ 0<br>
 If character attacks Enemy, the DEF Multiplier can be simplified as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(Level_{Enemy}\enspace +\enspace 20)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
-$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction\enspace -\enspace DEF\enspace Ignored)$$
+$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction_{Enemy}\enspace -\enspace DEF\enspace Ignored_{Character})$$
 For character attacks Trotter, it is:
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(1.5\enspace ×\enspace Level_{Trotter}\enspace +\enspace 30)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
+## REs Multiplier
+REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. It's calculated as:
+$$REs Multiplier = 1 - REs$$
+
 # Special Damage Formula
 ## Break Damage
 ## Normal DOT

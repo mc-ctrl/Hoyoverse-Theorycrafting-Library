@@ -57,11 +57,22 @@ The Enemy Defense is actually given by the product of Base Denfense and LLevel F
 $$DEF_{Enemy}\enspace =\enspace 5\enspace ×\enspace Level_{Enemy}\enspace +\enspace 500$$
 As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**
 In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:<br>
-$$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction)\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored)$$
+$$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction_{Target})\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored_{Attacker})$$
 Note: DEF<sub>Effective</sub> ≥ 0<br>
 If character attacks Enemy, the DEF Multiplier can be simplified as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 100}{k(Level_{Enemy}\enspace +\enspace 100)\enspace +\enspace (Level_{Character}\enspace +\enspace 100)}$$
-$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction)\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored)$$
+$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction_{Enemy})\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored_{Character})$$
+## REs Multiplier
+REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. Targets have different Elemental REs and Physical RE. It's calculated as:
+
+$$
+\text { REs Multiplier }={\begin{array}{ll}
+\text { 1 } - \text { REs/2 } & \text { if REs < 0 } \\
+\text { 1 } - \text { REs } & \text { if REs ∈ [0, 0.75] } \\
+\frac {1}{4\enspace ×\enspace REs\enspace +\enspace 1} & \text { if REs > 0.75 } 
+\end{array}}
+$$
+
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage
