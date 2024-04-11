@@ -73,6 +73,7 @@ $$
 \end{array}}
 $$
 
+<img src="REs_GI.png"></img>
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage
