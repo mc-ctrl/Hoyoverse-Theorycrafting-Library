@@ -16,7 +16,9 @@ $$
 **Base DMG** is the amount of DMG resulted from multiplying the ability's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
 Unless otherwise specified in the ability attributes, abilities will scale with ATK. Some abilities may scale with more than one stat.<br>
 ## CRIT Multiplier
-When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so the CRIT RATE<sub>Effective</sub> is clamp{0%, crit rate, 100%}. So the crit multiplier is calculated as:<br>
+When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
+$$ CRIT\enspace RATE_{Effective}\enspace =\enspace clamp\enspace[0\%,\enspace CRIT\enspace RATE,\enspace 100\%] $$ 
+The crit multiplier is calculated as:<br>
 
 $$
 \text { CRIT Multiplier }={\begin{array}{ll}
@@ -44,7 +46,7 @@ $$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace
 Note: DEF<sub>Effective</sub> ≥ 0<br>
 If character attacks Enemy, the DEF Multiplier can be simplified as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(Level_{Enemy}\enspace +\enspace 20)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
-$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction_{Enemy}\enspace -\enspace DEF\enspace Ignored_{Character})$$
+$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reduction_{Enemy}\enspace -\enspace DEF\enspace Ignored_{Character})$$
 For character attacks Trotter, it is:
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(1.5\enspace ×\enspace Level_{Trotter}\enspace +\enspace 30)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
 ## REs Multiplier

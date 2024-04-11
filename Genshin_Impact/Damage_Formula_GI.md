@@ -63,7 +63,7 @@ $$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace
 Note: DEF<sub>Effective</sub> ≥ 0<br>
 If character attacks Enemy, the DEF Multiplier can be simplified as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 100}{k(Level_{Enemy}\enspace +\enspace 100)\enspace +\enspace (Level_{Character}\enspace +\enspace 100)}$$
-$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction_{Enemy})\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored_{Character})$$
+$$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reduction_{Enemy})\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored_{Character})$$
 ## REs Multiplier
 REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. Targets have different Elemental REs and Physical RE. It's calculated as:
 
