@@ -94,9 +94,28 @@ $$
 For Amplifying Reaction, the EM Bouns is calculated as:
 $$EM\enspace Bouns\enspace =\enspace \frac{2.78\enspace ×\enspace EM}{EM\enspace +\enspace 1400}$$
 ## Special Multipliers
-This part contains some multipliers unusual, they are default value most time, so most players may even not know them.
+This part contains some multipliers unusual, they are default value most time, so most players may even not know them.<br>
 ### Damage Attenuation Multiplier
-
+You may find enemy's DMG decreases as hits increase. That is Damage Attenuation!<br>
+Most attack has AttenuationGroup and AttenuationTag. AttenuationGroup includes Reset Time, Damage Sequence, Poise Damage Sequence, Element Guage Sequence. In this chapter, we are concerned about the Reset Time and Damage Sequence. Other Sequences will be introduced in Interruption Resistance and Element Gauge Theory. The AttenuationGroup is usually called Internal Cooldown( abbreviated as ICD).<br>
+For example, [Jadeplume Terrorshroom](https://genshin-impact.fandom.com/wiki/Jadeplume_Terrorshroom)'s Rapid Pecks when activated has a 6s Reset Time and [1,0.5,0.5,0.5] Damage Sequence. This attack has 4 hits. Thanks to Damage Sequence, if you are hit 4 times, the 2nd, 3rd and 4th hit only take 50% DMG of the first hit. When the first attack hits, the reset time starts. As soon as reset time ends, the Damage Sequence will be reset. If attacks from the same Attacker hit the same Target, and the AttenuationGroup and AttenuationTag are same, attacks will share Attenuation.<br>
+For character's attack, observable Damage Attenuation is very rare, one is Yae Miko's Charged Attack has a 0.5s Reset Time and [1,0,0,0,0,0,0] Damage Sequence, which makes it can't make DMG to same Target within 0.5s. **Notable thing is the Transformative Reaction from same Attacker can only deal DMG to same Target within 0.5s for limited times( Electro-Charged and Overloaded for 1, others for 2), this is just Damage Attenuation.** So your Dendro Core can't hurt the Enemy too rapidly.<br>
+Note: The Attenuation directly affects damage percentage, which means it directly multiplies with Base DMG.
+### Damage Wane Multiplier
+Do you konw the arrows from Bow Character will have a wane after a little while flying? Ganyu mains may know better about this. Actually, it's common to see that Ganyu attacks an enemy from a long distance(over 35m) with her [Frostflake Arrow](https://genshin-impact.fandom.com/wiki/Liutian_Archery). The Frostflake Arrow DMG may reduce a lot, this is Damage Wane. In the game, only Bow Character's Aimed Shoot will have a Wane.<br>
+The Wane of Aimed Shoots is in the same regulations:<br>
+If arrow flies within 0.7s, it doesn't wane.<br>
+**After 0.7s, the DMG will wane 10% per 0.05s, up to 10% of the original damage.** There are a Hitlevel Wane and Element Guage Wane. They will be introduced in Interruption Resistance and Element Gauge Theory.<br>
+Note: The Wane directly affects damage percentage, which means it directly multiplies with Base DMG.<br>
+#### Supplementary Information for arrow's movement
+*Aimed Shoots have the same movement:*<br>
+*50m/s initial velocity, 25m linear range, 0.01s<sup>-1</sup> air resistance coeffcient, 5.5m/s<sup>2</sup> gravitional acceleration and 20s life time. That is to say, Aimed Shoot doesn't wane within about 35m. Nevertheless, arrow is a gadget, it's movement can be affected by the forces, such as WindZone Force, Airflow Force and so on. With enough information, We can easily discribe the movemont of the arrows.*<br>
+*If you are intersted in it, you can try to calculate it:*<br>
+*The air resistance coeffcient and gracitional acceleration don't work in the linear range, so the arrow generally makes a uniform linear motion of 0.5s. After the linear range, the works as following(Let air resistance coeffcient as A, gracitional acceleration as g, initial velocity as v<sub>0</sub>, Horizontal velocity as v<sub>x</sub>, Vertical velocity as v<sub>y</sub>, time as t):*
+$$v_{x}\enspace =\enspace v_{x0}\enspace ×\enspace (1\enspace -\enspace At), \enspace v_{x}\enspace ≥\enspace 0$$
+$$v_{y}\enspace =\enspace v_{y0}\enspace +\enspace gt$$
+*Please note that v and g are vectors, they have directions.*<br>
+*Actually, many gadgets' movements are in the similiar way, but this is another chapter.*
 # Special Damage Formula
-## Transformative_Reactionlike Damage
+## Transformative Reactionlike Damage
 ## True Damage
