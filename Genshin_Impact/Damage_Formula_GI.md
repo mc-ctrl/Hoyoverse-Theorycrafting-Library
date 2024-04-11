@@ -51,14 +51,14 @@ DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming 
 $$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coeffcient_{Attacker}}$$
 Then the DEF Multiplier is:
 $$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
-The Level Coeffcient_{Attacker} can be calculated as:
+The Level Coeffcient<sub>Attacker</sub> can be calculated as:
 $$Level\enspace Coeffcient_{Attacker}\enspace =\enspace 5\enspace ×\enspace Level_{Attacker}\enspace +\enspace 500$$
 The Enemy Defense is actually given by the product of Base Denfense and Level Factor_{Defense}. For the Base Denfense is always 500, and the Level Factor_{Defense} grows 0.05 each level. The Enemy Defense is calculated as:
 $$DEF_{Enemy}\enspace =\enspace 5\enspace ×\enspace Level_{Enemy}\enspace +\enspace 500$$
-As you see, this formula is the same as Level Coeffcient_{Attacker}, so **the DEF Multiplier is generally 0.5 when the Attacker_{Character} has the same level as Target_{Enemy} without any DEF Reduction or DEF Ignored.**
+As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**
 In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:
 $$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction)\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored)$$
-Note: DEF_{Effective} ≥ 0
+Note: DEF<sub>Effective</sub> ≥ 0
 If character attacks Enemy, the DEF Multiplier can be simplified as:
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 100}{k(Level_{Enemy}\enspace +\enspace 100)\enspace +\enspace (Level_{Character}\enspace +\enspace 100)}$$
 $$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction)\enspace ×\enspace (1\enspace -\enspace DEF\enspace Ignored)$$
