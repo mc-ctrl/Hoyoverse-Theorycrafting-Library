@@ -125,7 +125,7 @@ Multipliers are added, deleted and modified in these DMG. There are Transformati
 ## Transformative Reactionlike Damage
 You may confused with the title, this part is not Transformative Reaction Damage, at least, not entirely. I put a -like after Reaction is to say there are some DMG taking in the similar way with Transformative Reaction Damage. For example, the DMG from [Ocean-Hued Clam](https://genshin-impact.fandom.com/wiki/Ocean-Hued_Clam) works in same way. This kind of DMG has a special tag, IgnoreAttackerProperty.<br>
 For this type of DMG, it has actually the same Damage Formula of general DMG, but some Multipliers are modified:<br>
-$$DMG\enspace =\enspace ((Σ(Base\enspace DMG\enspace ×\enspace Base\enspace DMG\enspace Coefficient ×\enspace Transformative\enspace Reaction\enspace Multiplier)\enspace +\enspace Additive\enspace Base\enspace DMG\enspace Bouns))\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace CRIT\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace ×\enspace Special\enspace Multiplier$$
+$$DMG\enspace =\enspace ((Σ(Base\enspace DMG\enspace ×\enspace Base\enspace DMG\enspace Coefficient ×\enspace Transformative\enspace Reaction\enspace Multiplier)\enspace +\enspace Additive\enspace Base\enspace DMG\enspace Bouns))\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace CRIT\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace ×\enspace Special\enspace Multiplier$$
 ### Base DMG
 
 ## True Damage
