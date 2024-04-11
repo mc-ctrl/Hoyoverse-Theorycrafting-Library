@@ -1,4 +1,4 @@
-**Damage is the most important part of Genshin Impact's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
+**Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When characters, enemies or some gadgets attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: A single instance of damage cannot exceed 9,999,999. HP loss is not damage.<br>
 # General Damage Formula
@@ -40,12 +40,28 @@ $$
 \text { CRIT Multiplier }={\begin{array}{ll}
 \text { 1 + CRIT DMG } & \text { if CRIT } \\
 \text { 1 } & \text { else } \\
-\text { 1 + effective CRIT RATE } × \text { CRIT DMG } & \text { Expectation } 
+\text { 1 + effective CRIT RATE } × \text { CRIT DMG } & \text { Mean, for expectation} 
 \end{array}}
 $$
 
 The expectation of CRIT Multiplier is deduced as:<br>
 $$E(CRIT) = 1 × (1 - effective CRIT RATE) + effective CRIT RATE × (1 + CRIT DMG) = 1 + effective CRIT RATE × CRIT DMG$$
+## DEF Multiplier
+DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:
+$$DEF DMG Reduction = \frac{DEF_{Effective}}{DEF_{Effective} + Level Coeffcient_{Attacker}}$$
+Then the DEF Multiplier is:
+$$DEF Multiplier = 1 - DEF DMG Recduction$$
+The Level Coeffcient_{Attacker} can be calculated as:
+$$Level Coeffcient_{Attacker} = 5 × Level_{Attacker} + 500$$
+The Enemy Defense is actually given by the product of Base Denfense and Level Factor_{Defense}. For the Base Denfense is always 500, and the Level Factor_{Defense} grows 0.05 each level. The Enemy Defense is calculated as:
+$$DEF_{Enemy} = 5 × Level{Enemy} + 500$$
+As you see, this formula is the same as Level Coeffcient_{Attacker}, so **the DEF Multiplier is generally 0.5 when the Attacker_{Character} has the same level as Target_{Enemy} without any DEF Reduction or DEF Ignored.**
+In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:
+$$DEF_{Effective} = DEF_{Original} × (1 - DEF Reduction) × (1 - DEF Ignored)$$
+Note: DEF_{Effective} ≥ 0
+If character attacks Enemy, the DEF Multiplier can be simplified as:
+$$DEF Multiplier = \frac{Level_{Character} + 100}{k(Level_{Enemy} + 100) + (Level_{Character} + 100)}$$
+$$ k = (1 - DEF Reuction) × (1 - DEF Ignored)$$
 # Special Damage Formula
 ## Transformative_Reactionlike Damage
 ## True Damage

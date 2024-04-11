@@ -1,4 +1,4 @@
-**Damage is the most important part of Zenless Zone Zero's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
+**Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When agents or enemies attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: This article is based on CBT2. It's greatly subject to change.<br>
 # General Damage Formula
