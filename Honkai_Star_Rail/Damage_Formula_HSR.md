@@ -37,14 +37,16 @@ The Level Coeffcient<sub>Attacker</sub> can be calculated as:<br>
 $$Level\enspace Coeffcient_{Attacker}\enspace =\enspace 10\enspace ×\enspace Level_{Attacker}\enspace +\enspace 200$$
 The Enemy Defense is actually given by the product of Base Denfense and Level Factor<sub>Defense</sub>. For the Base Denfense is generally 210, and the Level Factor<sub>Defense</sub> grows 1/21 each level from 1. The Enemy Defense is calculated as:<br>
 $$DEF_{Enemy}\enspace =\enspace 10\enspace ×\enspace Level_{Enemy}\enspace +\enspace 200$$
-As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**
-***The Trotter is special, its DEF is 1.5 of general Enemy.***<br>
+***Note: The Trotter is special, its DEF is 1.5 of general Enemy.***<br>
+As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 (Trotter is 0.4) when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**<br>
 In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:<br>
 $$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction\enspace -\enspace DEF\enspace Ignored)$$
 Note: DEF<sub>Effective</sub> ≥ 0<br>
 If character attacks Enemy, the DEF Multiplier can be simplified as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(Level_{Enemy}\enspace +\enspace 20)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
 $$k\enspace =\enspace (1\enspace -\enspace DEF\enspace Reuction\enspace -\enspace DEF\enspace Ignored)$$
+For character attacks Trotter, it is:
+$$DEF\enspace Multiplier\enspace =\enspace \frac{Level_{Character}\enspace +\enspace 20}{k(1.5\enspace ×\enspace Level_{Trotter}\enspace +\enspace 30)\enspace +\enspace (Level_{Character}\enspace +\enspace 20)}$$
 # Special Damage Formula
 ## Break Damage
 ## Normal DOT
