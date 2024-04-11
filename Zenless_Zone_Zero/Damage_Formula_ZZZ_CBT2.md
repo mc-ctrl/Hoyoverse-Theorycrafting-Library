@@ -15,6 +15,24 @@ $$
 
 **Base DMG** is the amount of DMG resulted from multiplying the skill's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
 Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some abilities may scale with more than one stat.<br>
+## CRIT
+When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so the CRIT RATE<sub>Effective</sub> is clamp{0%, crit rate, 100%}. So the crit multiplier is calculated as:<br>
+
+$$
+\text { CRIT Multiplier }={\begin{array}{ll}
+\text { 1 + CRIT DMG } & \text { if CRIT } \\
+\text { 1 } & \text { else } \\
+\text { 1 + CRIT RATE Effective } × \text { CRIT DMG } & \text { Mean, for Expectation} 
+\end{array}}
+$$
+
+The expectation of CRIT Multiplier is deduced as:<br>
+$$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace RATE_{Effective})\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
+## DEF Multiplier
+DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:<br>
+$$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coeffcient_{Attacker}}$$
+Then the DEF Multiplier is:<br>
+$$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
 # Special Damage Formula
 ## Element Abnormal Damage
 ## Other Buff Damage
