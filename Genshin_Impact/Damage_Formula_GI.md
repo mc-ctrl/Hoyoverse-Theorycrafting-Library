@@ -37,7 +37,7 @@ Note: Kairagi will gain a 80% Damage Reduction shortly after being aggravated, F
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
 
-$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace \{0\%,\enspace CRIT\enspace Rate,\enspace 100\%\} $$
+$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace [0\%,\enspace CRIT\enspace Rate,\enspace 100\%] $$
 
 The crit multiplier is calculated as:<br>
 
