@@ -70,6 +70,8 @@ $$
 \end{array}}
 $$
 
+## Special Damage Multiplier
+If you have played Grace, Billy or Rina in CBT2, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 # Special Damage Formula
 ## Element Abnormal Damage
 ## Other Buff Damage
