@@ -3,7 +3,7 @@ When characters or enemies attack their targets, they generally deal **damage** 
 Note: HP loss is not damage.<br>
 # General Damage Formula
 For DMG dealt by Abilities, Traces, Eidolons or enemy attacks, the DMG is calculated as:<br>
-$$DMG\enspace =\enspace Base DMG_{Attacker}\enspace ×\enspace DMG Boost Multiplier_{Attacker}\enspace ×\enspace Weaken Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DMG Mitigation Multiplier_{Target}\enspace ×\enspace DMG\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace  REs\enspace Multiplier_{Target}$$
+$$DMG\enspace =\enspace Base DMG_{Attacker}\enspace ×\enspace DMG Boost Multiplier_{Attacker}\enspace ×\enspace Weaken Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DMG Mitigation Multiplier_{Target}\enspace ×\enspace DMG\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace  REs\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
@@ -23,7 +23,7 @@ The crit multiplier is calculated as:<br>
 $$
 \text { CRIT Multiplier }={\begin{array}{ll}
 \text { 1 + CRIT DMG } & \text { if CRIT } \\
-\text { 1 } & \text { else } \\
+\text { 1 } & \text { otherwise } \\
 \text { 1 + CRIT RATE Effective } × \text { CRIT DMG } & \text { Mean, for Expectation} 
 \end{array}}
 $$

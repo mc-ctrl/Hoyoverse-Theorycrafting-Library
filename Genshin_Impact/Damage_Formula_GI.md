@@ -42,7 +42,7 @@ The crit multiplier is calculated as:<br>
 $$
 \text { CRIT Multiplier }={\begin{array}{ll}
 \text { 1 + CRIT DMG } & \text { if CRIT } \\
-\text { 1 } & \text { else } \\
+\text { 1 } & \text { otherwise } \\
 \text { 1 + CRIT Rate Effective } × \text { CRIT DMG } & \text { Mean, for Expectation} 
 \end{array}}
 $$
@@ -93,7 +93,7 @@ $$
 \text { 2 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Cryo triggers Melt } \\
 \text { 1.5 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Hydro triggers Vaporize } \\
 \text { 2 } × \text { (1 + EM Bouns + Reaction Bouns) } & \text { if Pyro triggers Vaporize } \\
-\text { 1} & \text { otherwise} 
+\text { 1} & \text { otherwise } 
 \end{array}}
 $$
 
@@ -323,3 +323,4 @@ Note2: Most Shockwave DMG and Ley Line Disorder DMG in Sprial Abyss or other Dun
 # Try some exercises
 
 # How to calculate accurately
+To make an accurate calculation, you are supposed to know how the attributes grow in the game first.
