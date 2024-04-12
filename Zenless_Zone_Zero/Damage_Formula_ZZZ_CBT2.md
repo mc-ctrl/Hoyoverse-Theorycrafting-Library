@@ -37,6 +37,7 @@ Then the DEF Multiplier is:<br>
 $$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
 So you can calculate the DEF Multiplier as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level\enspace Coefficient_{Attacker}}{Level\enspace Coefficient_{Attacker}\enspace +\enspace DEF_{Target}}$$
+But the Level Coefficient<sub>Attacker</sub> of ZZZ is not like GI or HSR, it's curve is not a linear. You can look up it here: [Level Coefficient](Level_Coefficient_ZZZ.md)
 # Special Damage Formula
 ## Element Abnormal Damage
 ## Other Buff Damage

@@ -207,9 +207,9 @@ True Damage can't trigger Spread or Aggravate, but it can be increased by Amplif
 Followings is some common True Damage:<br>
 <table>
     <tr>
-        <td>Attack</td>
-        <td>Scaling Percentage</td>
-        <td>Damage Type</td>
+        <th>Attack</th>
+        <th>Scaling Percentage</th>
+        <th>Damage Type</th>
     </tr>
     <tr>
         <td>Electrogranum Coordinated Attacks</td>
