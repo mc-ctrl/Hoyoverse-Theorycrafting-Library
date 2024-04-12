@@ -45,7 +45,7 @@ So you can calculate the DEF Multiplier as:<br>
 $$DEF\enspace Multiplier\enspace =\enspace \frac{Level\enspace Coefficient_{Attacker}}{Level\enspace Coefficient_{Attacker}\enspace +\enspace DEF_{Target}}$$
 But the Level Coefficient<sub>Attacker</sub> of ZZZ is not like GI or HSR, it's curve is not a linear. You can look up it here: [Level Coefficient](Level_Coefficient_ZZZ.md)<br>
 Here is a graph:<br>
-<img src="Level Coefficient.png"></img>
+<img src="https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Level%20Coefficient.png"></img>
 With the fitting, we can make sure that the Level Coefficient Curve is a quadratic function.<br>
 Unlike GI or HSR, the DEF of Enemy differs:<br>
 Different enemy has different Base DEF, even the Scaling Curve differs between enemies. You can even find the enemies with same name have different defence.<br>

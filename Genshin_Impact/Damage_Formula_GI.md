@@ -80,7 +80,7 @@ $$
 \end{array}}
 $$
 
-<img src="REs_GI.png" vertical-align: middle></img><br>
+<img src="https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Genshin_Impact/REs_GI.png"></img><br>
 And the REs<sub>Effective</sub> is:<br>
 $$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Penetrate_{Attacker}$$
 You can look up the REs here: [Enemy REs](https://genshin-impact.fandom.com/wiki/Resistance#Enemy_RES)<br>
