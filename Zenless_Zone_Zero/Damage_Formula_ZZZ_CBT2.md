@@ -7,9 +7,9 @@ $$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspa
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Skill Scaling } × \text { ATK } & \text { if skill scales with ATK } \\
-\text { Skill Scaling } × \text { DEF } & \text { if skill scales with DEF } \\
-\text { Skill Scaling } × \text { Max HP } & \text { if skill scales with Max HP } 
+\text { Skill Scaling Percentage } × \text { ATK } & \text { if skill scales with ATK } \\
+\text { Skill Scaling Percentage } × \text { DEF } & \text { if skill scales with DEF } \\
+\text { Skill Scaling Percentage } × \text { Max HP } & \text { if skill scales with Max HP } 
 \end{array}}
 $$
 
@@ -32,9 +32,11 @@ The expectation of CRIT Multiplier is deduced as:<br>
 $$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace RATE_{Effective})\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
 ## DEF Multiplier
 DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:<br>
-$$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coeffcient_{Attacker}}$$
+$$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coefficient_{Attacker}}$$
 Then the DEF Multiplier is:<br>
 $$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
+So you can calculate the DEF Multiplier as:<br>
+$$DEF\enspace Multiplier\enspace =\enspace \frac{Level\enspace Coefficient_{Attacker}}{Level\enspace Coefficient_{Attacker}\enspace +\enspace DEF_{Target}}$$
 # Special Damage Formula
 ## Element Abnormal Damage
 ## Other Buff Damage

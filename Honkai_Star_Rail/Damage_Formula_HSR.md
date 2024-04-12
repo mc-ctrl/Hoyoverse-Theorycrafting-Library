@@ -7,9 +7,9 @@ $$DMG\enspace =\enspace Base DMG_{Attacker}\enspace ×\enspace DMG Boost Multipl
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Ability Scaling } × \text { ATK } & \text { if ability scales with ATK } \\
-\text { Ability Scaling } × \text { DEF } & \text { if ability scales with DEF } \\
-\text { Ability Scaling } × \text { Max HP } & \text { if ability scales with Max HP } 
+\text { Ability Scaling Percentage } × \text { ATK } & \text { if ability scales with ATK } \\
+\text { Ability Scaling Percentage } × \text { DEF } & \text { if ability scales with DEF } \\
+\text { Ability Scaling Percentage } × \text { Max HP } & \text { if ability scales with Max HP } 
 \end{array}}
 $$
 
@@ -32,15 +32,17 @@ The expectation of CRIT Multiplier is deduced as:<br>
 $$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace RATE_{Effective})\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace RATE_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
 ## DEF Multiplier
 DEF Multiplier is the multiplier that Defence(abbreviated as DEF) reduces incoming damage, it's calculated as:<br>
-$$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coeffcient_{Attacker}}$$
+$$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coefficient_{Attacker}}$$
 Then the DEF Multiplier is:<br>
 $$DEF\enspace Multiplier\enspace =\enspace 1\enspace -\enspace DEF\enspace DMG\enspace Recduction$$
-The Level Coeffcient<sub>Attacker</sub> can be calculated as:<br>
-$$Level\enspace Coeffcient_{Attacker}\enspace =\enspace 10\enspace ×\enspace Level_{Attacker}\enspace +\enspace 200$$
+So you can calculate the DEF Multiplier as:<br>
+$$DEF\enspace Multiplier\enspace =\enspace \frac{Level\enspace Coefficient_{Attacker}}{Level\enspace Coefficient_{Attacker}\enspace +\enspace DEF_{Target}}$$
+The Level Coefficient<sub>Attacker</sub> can be calculated as:<br>
+$$Level\enspace Coefficient_{Attacker}\enspace =\enspace 10\enspace ×\enspace Level_{Attacker}\enspace +\enspace 200$$
 The Enemy Defense is actually given by the product of Base Denfense and Level Factor<sub>Defense</sub>. For the Base Denfense is generally 210, and the Level Factor<sub>Defense</sub> grows 1/21 each level from 1. The Enemy Defense is calculated as:<br>
 $$DEF_{Enemy}\enspace =\enspace 10\enspace ×\enspace Level_{Enemy}\enspace +\enspace 200$$
 ***Note: The Trotter is special, its DEF is 1.5 of general Enemy.***<br>
-As you see, this formula is the same as Level Coeffcient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 (Trotter is 0.4) when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**<br>
+As you see, this formula is the same as Level Coefficient<sub>Attacker</sub>, so **the DEF Multiplier is generally 0.5 (Trotter is 0.4) when the Attacker<sub>Character</sub> has the same level as Target<sub>Enemy</sub> without any DEF Reduction or DEF Ignored.**<br>
 In game, there are DEF Reduction and DEF Ignored, the effective DEF is calculated as:<br>
 $$DEF_{Effective}\enspace =\enspace DEF_{Original}\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction_{Target}\enspace -\enspace DEF\enspace Ignored_{Attacker})$$
 Note: DEF<sub>Effective</sub> ≥ 0<br>
