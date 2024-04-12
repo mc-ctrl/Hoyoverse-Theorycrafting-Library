@@ -21,7 +21,7 @@ $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣD
 You may also find some DMG Bouns for Fighting Style, this is also all DMG Bouns.
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
-$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace[0\%,\enspace CRIT\enspace Rate,\enspace 100\%] $$ 
+$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace[0,\enspace CRIT\enspace Rate,\enspace 1] $$ 
 The crit multiplier is calculated as:<br>
 
 $$
