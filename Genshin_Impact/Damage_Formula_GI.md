@@ -207,7 +207,7 @@ True Damage can't trigger Spread or Aggravate, but it can be increased by Amplif
 Followings is some common True Damage:<br>
 <table>
     <tr>
-        <td>Damage</td>
+        <td>Attack</td>
         <td>Scaling Percentage</td>
         <td>Damage Type</td>
     </tr>
@@ -317,8 +317,8 @@ Followings is some common True Damage:<br>
         <td>Physical</td>
     </tr>
 </table>
-The high tier Eremite will take 37.5% of their Max Hp True Damage when the Spirit of Omen they summoned dies.<br>
-Note: Most Shockwave DMG and Ley Line Disorder DMG in Sprial Abyss or other Dungeons are True Damage.<br>
+Note1: The high tier Eremite will take 37.5% of their Max Hp True Damage when the Spirit of Omen they summoned dies.<br>
+Note2: Most Shockwave DMG and Ley Line Disorder DMG in Sprial Abyss or other Dungeons are True Damage.<br>
 
 # Try some exercises
 
