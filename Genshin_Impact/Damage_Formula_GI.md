@@ -317,7 +317,7 @@ Followings is some common True Damage:<br>
         <td>Physical</td>
     </tr>
 </table>
-Note1: The high tier Eremite will take 37.5% of their Max Hp True Damage when the Spirit of Omen they summoned dies.<br>
+Note1: The high tier Eremite will take 37.5% of their Max HP True Damage when the Spirit of Omen they summoned dies.<br>
 Note2: Most Shockwave DMG and Ley Line Disorder DMG in Sprial Abyss or other Dungeons are True Damage.<br>
 
 # Try some exercises
