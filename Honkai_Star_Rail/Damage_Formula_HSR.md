@@ -56,7 +56,7 @@ REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect inc
 $$REs Multiplier = 1 - REs$$
 And the REs<sub>Effective</sub> is:<br>
 $$REs_{Effective}\enspace =\enspace REs_{Original}\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Penetrate_{Attacker}$$
-[Damage REs](https://honkai-star-rail.fandom.com/wiki/Damage_RES)
+You can look up the Enemy REs here: [Damage REs](https://honkai-star-rail.fandom.com/wiki/Damage_RES)
 
 # Special Damage Formula
 ## Break Damage
