@@ -36,7 +36,7 @@ $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace (1\enspace +\enspace Σ
 Note: Kairagi will gain a 80% Damage Reduction shortly after being aggravated, Frostarm Lawachurl will gain the same one during Shield.<br>
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
-$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace[0\%,\enspace CRIT\enspace Rate,\enspace 100\%] $$ 
+$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace [0\%,\enspace CRIT\enspace Rate,\enspace 100\%] $$
 The crit multiplier is calculated as:<br>
 
 $$
@@ -124,6 +124,9 @@ $$v_{y}\enspace =\enspace v_{y0}\enspace +\enspace gt$$
 *Please note that v and g are vectors, they have directions.*<br>
 *Actually, many gadgets' movements are in the similar way, but this is another chapter.*<br><br>
 **Multipliers above are only the common ones, multipliers were, are and will be updated.**
+### Other Multipliers
+Dehya's [Elemental Skill](https://genshin-impact.fandom.com/wiki/Molten_Inferno) allows her reduce the incoming DMG of Team Members, this is directly multiplicative with any DMG, including Transformative Reactionlike DMG and True DMG.<br>
+[La Signora](https://genshin-impact.fandom.com/wiki/Narukami_Island:_Tenshukaku) has a mechanic that prevents her from taking a single instance of DMG that exceeds a percentage of her Max HP. DMG exceeding that threshold will be nullified. In her Phase 1, it's 30.1%, Phase 2 is 20.1%.<br>
 # Special Damage Formula
 For DMG taking in different way, the formula is not entirely the same as general one.<br>
 Multipliers are added, deleted and modified in these DMG. There are Transformative Reactionlike Damage and True Damage:
@@ -157,6 +160,7 @@ $$
 $$
 
 The [Level Multiplier](Level_Multiplier_Reaction.md) is just what we introduced in [Additive Base DMG Bouns](#additive-base-dmg-bouns).<br>
+Note: The Transformative Reaction triggered by enemy or gadget is based on environment level, not enemy's level. The environment level differs between areas. It's generally the plurality of the enemy's levels in the area. The grass Burning or water Electro-Charged DMG doesn't increase with World Level after World Level 4. World Level 4's environment level is 31 lower than Level 8.
 ### Base DMG Coefficient
 Actually, the Transformative Reaction DMG has a Base DMG Coefficient Multiplier, it's very rare.<br>
 We can only find it in Sprial Abyss, the [Floor 1 and Floor 4 Ley Line Disorder](https://genshin-impact.fandom.com/wiki/Spiral_Abyss/Floors/Abyss_Corridor).<br>
@@ -165,7 +169,8 @@ Just like other Reaction Multipliers, Transformative Reaction Multiplier is calc
 $$Transformative\enspace Reaction\enspace Multiplier\enspace =\enspace 1\enspace +\enspace EM\enspace Bouns\enspace +\enspace Reaction\enspace Bouns$$
 $$EM\enspace Bouns\enspace =\enspace \frac{16\enspace ×\enspace EM\enspace}{EM\enspace +\enspace 2000}$$
 ### Additive Base DMG Bouns
-The Electro Swirl can trigger Aggravate, if it attacks an enemy affected by Quicken, you should calculate the Additive Base DMG Bouns.
+The Electro Swirl can trigger Aggravate, if it attacks an enemy affected by Quicken, you should calculate the Additive Base DMG Bouns.<br>
+Note: Some articles say DMG with 0 damage percentage can't trigger Spread or Aggravate. That's not correct, actually, the damage percentage of Electro Swirl is just 0, its DMG is based on damage extra.
 ### CRIT Multiplier
 **In fact, most Transformative Reactionlike Damage can't score a CRIT hit.** That's because it has the tag IgnoreAttackerProperty. This tag ignores almost every property of attacker, only the EM is kept, and it also ignores the target's level and defence. And this is the reason why the Damage Formula doesn't have a Damage Bouns Multiplier.<br>
 There hadn't been supoosed to be a CRIT Multiplier before November 02, 2022. But as Nahida's [2nd Constellation](https://genshin-impact.fandom.com/wiki/The_Root_of_All_Fullness) landed, there was, is and will be.<br>
@@ -176,7 +181,144 @@ Actually, they put 99,999,999 instead of Level Coefficient<sub>Attacker</sub>, t
 $$DEF\enspace Multiplier\enspace =\enspace \frac{99,999,999}{99,999,999 +\enspace DEF_{Target}}$$
 It's obvious that 99,999,999 ≫ DEF<sub>Target</sub>, so the DEF<sub>Target</sub> can be ignored, the DEF Multiplier can be calculated as 1 at most time.<br>
 And you may see the DMG from Ocean-Hued Clam are always 24299, 26999, etc. That's because in Genshin Impact, the DMG displayed is only its integer part. This DEF Multiplier eventually causes these DMG displayed.
+### REs Multiplier
+It's just the same as the genernal one.
+### Amplifying Multiplier
+The Buring, Fire Swirl, Hydro Swirl and Ice(Frozen) Swirl can trigger Amplifying Reaction, this Multiplier is supposed to be involved when it occurs.
+### Special Multiplier
+Damage Attenuation is very common in Transformative Reactionlike Damage. Actually, every Transformative Reaction DMG has AttenuationGroup and AttenuationTag. The Attenuation Result of Transformative Reaction Damage is:<br>
+
+$$
+\text { } {\begin{array}{ll}
+\text { Can trigger DMG 2 times within 0.5s } & \text { for Swirl, Shattered, Bloom, Burgeon, Hyperbloom, Superconduct } \\
+\text { Can trigger DMG 1 times within 0.5s } & \text { for Overloaded, Electro-Charged } \\
+\text { Can trigger DMG 8 times within 2s } & \text { for Buring } 
+\end{array}}
+$$
+
+Note1: The Attenuation only works when the same Attacker attacks the same Target.
+Note2: Different Element of Swirl has different AttenuationTag, but Frozen Swirl is actually Cryo Swirl.
+Note3: Center Swirl DMG and spread Swirl DMG, center Electro-Charged DMG and spread Electro-Charged DMG share Attenuation.
 ## True Damage
+True Damage ignores target's REs, DEF, etc. It can be calculated as:<br>
+$$DMG\enspace =\enspace Scaling\enspace Percentage\enspace ×\enspace Level\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace ×\enspace Special\enspace Multipliers$$
+The [Level Multiplier](Level_Multiplier_Reaction.md) is just what we introduced in [Additive Base DMG Bouns](#additive-base-dmg-bouns). The Attacker of True Damage is environment, so it's based on environment level.<br>
+True Damage can't trigger Spread or Aggravate, but it can be increased by Amplifying Reactions.<br>
+Followings is some common True Damage:<br>
+<table>
+    <tr>
+        <td>Damage</td>
+        <td>Scaling Percentage</td>
+        <td>Damage Type</td>
+    </tr>
+    <tr>
+        <td>Electrogranum Coordinated Attacks</td>
+        <td>5.2</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Electrogranum Lightning Blasts</td>
+        <td>7.8</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Kamuijima Cannon</td>
+        <td>25</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Thunderstone</td>
+        <td>0.657</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Thunder Dwelling Against Players</td>
+        <td>4</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Thunder Dwelling Against Enemies</td>
+        <td>80</td>
+        <td>Electro </td>
+    </tr>
+    <tr>
+        <td>Mountainator</td>
+        <td>25</td>
+        <td>Geo </td>
+    </tr>
+    <tr>
+        <td>Unique Rock Pillar Resonant Quakes</td>
+        <td>21</td>
+        <td>Geo </td>
+    </tr>
+    <tr>
+        <td>Dendrogranum Coordinated Attacks</td>
+        <td>2</td>
+        <td>Dendro </td>
+    </tr>
+    <tr>
+        <td>Healthy Dendrogranum Coordinated Attacks</td>
+        <td>5</td>
+        <td>Dendro</td>
+    </tr>
+    <tr>
+        <td>Withering Branch Counterattacks</td>
+        <td>3</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Armored Shield Press</td>
+        <td>11.6889</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Armored Shield Hold</td>
+        <td>12.4681</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Armored Shield Hold Counterattack</td>
+        <td>46.8202</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Water Blades Press</td>
+        <td>19.3515</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Water Blades Hold</td>
+        <td>24.157</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Sonar Waves Press</td>
+        <td>7.0133</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Sonar Waves Hold</td>
+        <td>5.0652</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Hat-Shaped Bombs Press</td>
+        <td>15.5851</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Hat-Shaped Bombs Hold</td>
+        <td>23.3777</td>
+        <td>Physical</td>
+    </tr>
+    <tr>
+        <td>Energy Spout Hold</td>
+        <td>3.8963</td>
+        <td>Physical</td>
+    </tr>
+</table>
+The high tier Eremite will take 37.5% of their Max Hp True Damage when the Spirit of Omen they summoned dies.<br>
+Note: Most Shockwave DMG and Ley Line Disorder DMG in Sprial Abyss or other Dungeons are True Damage.<br>
 
 # Try some exercises
 
