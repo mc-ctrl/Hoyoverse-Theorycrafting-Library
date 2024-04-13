@@ -108,7 +108,7 @@ If you have played Grace, Billy or Rina in CBT2, you may notice that these agent
 In ZZZ, the Special Damage generally refers to Attribute Anomal Damage, but there are some other Buff Damage like Ignite, Overload or Impaired, etc. They have different trigger methods and may have little in common.
 
 ## Attribute Anomal Damage
-Before calculating Attribute Anomal Damage, you'd better have a knowledge about how to trigger Attribute Anomal Damage: Attribute Anomal
+Before calculating Attribute Anomal Damage, you'd better have a knowledge about how to trigger Attribute Anomal Damage: [Attribute Anomal](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomal.md)
 
 ## Other Buff Damage
 
