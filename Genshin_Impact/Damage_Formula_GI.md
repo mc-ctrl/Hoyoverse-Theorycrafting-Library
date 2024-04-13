@@ -1,6 +1,43 @@
 **Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When characters, enemies or some gadgets attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: A single instance of damage cannot exceed 9,999,999. HP loss is not damage.<br>
+
+# Catalogs
+<!-- TOC -->
+
+- [Catalogs](#catalogs)
+- [General Damage Formula](#general-damage-formula)
+  - [Base DMG](#base-dmg)
+  - [Base DMG Coefficient](#base-dmg-coefficient)
+  - [Additive Base DMG Bouns](#additive-base-dmg-bouns)
+  - [DMG Bouns Multiplier](#dmg-bouns-multiplier)
+  - [CRIT Multiplier](#crit-multiplier)
+  - [DEF Multiplier](#def-multiplier)
+  - [REs Multiplier](#res-multiplier)
+  - [Amplifying Multiplier](#amplifying-multiplier)
+  - [Special Multipliers](#special-multipliers)
+    - [Damage Attenuation Multiplier](#damage-attenuation-multiplier)
+    - [Damage Wane Multiplier](#damage-wane-multiplier)
+      - [Supplementary Information for arrow's movement](#supplementary-information-for-arrows-movement)
+    - [Other Multipliers](#other-multipliers)
+- [Special Damage Formula](#special-damage-formula)
+  - [Transformative Reactionlike Damage](#transformative-reactionlike-damage)
+    - [Base DMG](#base-dmg-1)
+    - [Base DMG Coefficient](#base-dmg-coefficient-1)
+    - [Transformative Reaction Multiplier](#transformative-reaction-multiplier)
+    - [Additive Base DMG Bouns](#additive-base-dmg-bouns-1)
+    - [CRIT Multiplier](#crit-multiplier-1)
+    - [DEF Multiplier](#def-multiplier-1)
+    - [REs Multiplier](#res-multiplier-1)
+    - [Amplifying Multiplier](#amplifying-multiplier-1)
+    - [Special Multiplier](#special-multiplier)
+  - [True Damage](#true-damage)
+- [Try some exercises](#try-some-exercises)
+- [How to calculate accurately](#how-to-calculate-accurately)
+
+<!-- /TOC -->
+<!-- /TOC -->
+
 # General Damage Formula
 For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is calculated as:<br>
 $$DMG\enspace =\enspace ((Σ(Base\enspace DMG\enspace ×\enspace Base\enspace DMG\enspace Coefficient)\enspace +\enspace Additive\enspace Base\enspace DMG\enspace Bouns))\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace CRIT\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace ×\enspace Special\enspace Multiplier$$

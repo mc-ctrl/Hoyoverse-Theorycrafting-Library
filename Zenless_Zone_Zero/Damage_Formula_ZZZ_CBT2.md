@@ -1,41 +1,21 @@
 **Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When agents or enemies attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: This article is based on CBT2. It's greatly subject to change.<br>
-# General Damage Formula
-For DMG dealt by Skills, Talents or enemy attacks, the DMG is calculated as:<br>
-$$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace Damage\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace Stun\enspace Taken\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
-## Base DMG
-$$
-\text { Base DMG }={\begin{array}{ll}
-\text { Skill Scaling Percentage } × \text { ATK } & \text { if skill scales with ATK } \\
-\text { Skill Scaling Percentage } × \text { DEF } & \text { if skill scales with DEF } \\
-\text { Skill Scaling Percentage } × \text { Max HP } & \text { if skill scales with Max HP } 
-\end{array}}
-$$
 
-**Base DMG** is the amount of DMG resulted from multiplying the skill's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
-Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some abilities may scale with more than one stat.<br>
-## DMG Bouns Multiplier
-DMG Bouns refers to all percentage-based DMG bounses, including Element Type DMG Bounses, as well as special percentage-based DMG bonus based on attacktag(Basic/Special/Ex Special/Sub/Dash/Combo/Assist/Chain Attack, Ultimate, etc.), all DMG bouns and so on. It means **Attacker deals more DMG.**:<br>
-$$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Bouns$$
-You may also find some DMG Bouns for Fighting Style, this is also all DMG Bouns.
-## CRIT Multiplier
-When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
+# Catalogs
+<!-- TOC -->
 
-$$ CRIT\enspace Rate_{Effective}\enspace =\enspace clamp\enspace [0,\enspace CRIT\enspace Rate,\enspace 1] $$
+- [Catalogs](#catalogs)
+  - [DEF Multiplier](#def-multiplier)
+  - [REs Multiplier](#res-multiplier)
+  - [Damage Taken Multiplier](#damage-taken-multiplier)
+  - [Stun Taken Multiplier](#stun-taken-multiplier)
+  - [Special Damage Multiplier](#special-damage-multiplier)
+- [Special Damage Formula](#special-damage-formula)
+  - [Element Abnormal Damage](#element-abnormal-damage)
+  - [Other Buff Damage](#other-buff-damage)
 
-The crit multiplier is calculated as:<br>
-
-$$
-\text { CRIT Multiplier }={\begin{array}{ll}
-\text { 1 + CRIT DMG } & \text { if CRIT } \\
-\text { 1 } & \text { otherwise } \\
-\text { 1 + CRIT Rate Effective } × \text { CRIT DMG } & \text { Mean, for Expectation} 
-\end{array}}
-$$
-
-The expectation of CRIT Multiplier is deduced as:<br>
-$$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace Rate_{Effective})\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
+<!-- /TOC -->pace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace Rate_{Effective})\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
 ## DEF Multiplier
 DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:<br>
 $$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coefficient_{Attacker}}$$
