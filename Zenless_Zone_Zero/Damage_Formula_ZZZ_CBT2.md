@@ -14,7 +14,7 @@ Note: This article is based on CBT2. It's greatly subject to change.<br>
   - [Stun Taken Multiplier](#stun-taken-multiplier)
   - [Special Damage Multiplier](#special-damage-multiplier)
 - [Special Damage Formula](#special-damage-formula)
-  - [Element Abnormal Damage](#element-abnormal-damage)
+  - [Attribute Anomal Damage](#attribute-anomal-damage)
   - [Other Buff Damage](#other-buff-damage)
 - [How to calculate accurately](#how-to-calculate-accurately)
 
@@ -37,7 +37,7 @@ $$
 Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some abilities may scale with more than one stat.<br>
 
 ## DMG Bouns Multiplier
-DMG Bouns refers to all percentage-based DMG bounses, including Element Type DMG Bounses, as well as special percentage-based DMG bonus based on attacktag(Basic/Special/Ex Special/Sub/Dash/Combo/Assist/Chain Attack, Ultimate, etc.), all DMG bouns and so on. It means **Attacker deals more DMG.**:<br>
+DMG Bouns refers to all percentage-based DMG bounses, including Attribute Type DMG Bounses, as well as special percentage-based DMG bonus based on attacktag(Basic/Special/Ex Special/Sub/Dash/Combo/Assist/Chain Attack, Ultimate, etc.), all DMG bouns and so on. It means **Attacker deals more DMG.**:<br>
 $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Bouns$$
 You may also find some DMG Bouns for Fighting Style, this is also all DMG Bouns.
 
@@ -78,9 +78,9 @@ $$DEF_{Effective}\enspace =\enspace DEF\enspace ×\enspace (1\enspace -\enspace 
 For example, in CBT2, one of Advanced Stats of Disk Drive Ⅴ is PEN Ratio, for the S Tier max Level, it's 30%. The Boss of Chapter 1, Dead End Butcher has 1127.48 DEF at Level 60. It means this PEN Ratio Advanced Stats can offer agents a 21.36% DMG Bouns. It's not suitable for game numberical setup. The better DMG Bouns is about 15% for CBT2's ZZZ.<br>
 
 ## REs Multiplier
-REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. Targets may have different Element Type RE. It's calculated as:
+REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. Targets may have different Attribute Type RE. It's calculated as:
 $$REs\enspace Multiplier\enspace =\enspace 1\enspace -\enspace REs_{Effective}$$
-$$REs_{Effective}\enspace =\enspace Element\enspace Type\enspace REs\enspace +\enspace All\enspace Type\enspace REs\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Ignored_{Attacker}$$
+$$REs_{Effective}\enspace =\enspace Attribute\enspace Type\enspace REs\enspace +\enspace All\enspace Type\enspace REs\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Ignored_{Attacker}$$
 For example, the Dead End Butcher has 10% Electric RE and Fire RE, -20% Ether RE and -10% Physical RE in CBT2. We can easily choose suitable Agents for battle.
 
 ## Damage Taken Multiplier
@@ -105,10 +105,10 @@ $$
 If you have played Grace, Billy or Rina in CBT2, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 
 # Special Damage Formula
-In ZZZ, the Special Damage generally refers to Element Abnormal Damage, but there are some other Buff Damage like Ignite, Overload or Impaired, etc. They have different trigger methods and may have little in common.
+In ZZZ, the Special Damage generally refers to Attribute Anomal Damage, but there are some other Buff Damage like Ignite, Overload or Impaired, etc. They have different trigger methods and may have little in common.
 
-## Element Abnormal Damage
-Before calculating Element Abnormal Damage, you'd better have a knowledge about how to trigger Element Abnormal Damage: Element Abnormal
+## Attribute Anomal Damage
+Before calculating Attribute Anomal Damage, you'd better have a knowledge about how to trigger Attribute Anomal Damage: Attribute Anomal
 
 ## Other Buff Damage
 
