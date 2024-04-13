@@ -2,10 +2,8 @@
 When characters, enemies or some gadgets attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: A single instance of damage cannot exceed 9,999,999. HP loss is not damage.<br>
 
-# Catalogs
 <!-- TOC -->
 
-- [Catalogs](#catalogs)
 - [General Damage Formula](#general-damage-formula)
   - [Base DMG](#base-dmg)
   - [Base DMG Coefficient](#base-dmg-coefficient)
