@@ -96,5 +96,8 @@ $$
 ## Special Damage Multiplier
 If you have played Grace, Billy or Rina in CBT2, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 # Special Damage Formula
+In ZZZ, the Special Damage generally refers to Element Abnormal Damage, but there are some other Buff Damage like Ignite, Overload or Impaired, etc. They have different trigger methods and may have little in common.
 ## Element Abnormal Damage
+Before calculating Element Abnormal Damage, you'd better have a knowledge about how to trigger Element Abnormal Damage: Element Abnormal
 ## Other Buff Damage
+# How to calculate accurately

@@ -1,0 +1,1 @@
+Element Abnormal System is a special part of ZZZ's combat System.

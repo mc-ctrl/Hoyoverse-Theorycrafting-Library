@@ -63,3 +63,4 @@ You can look up the Enemy REs here: [Damage REs](https://honkai-star-rail.fandom
 # Special Damage Formula
 ## Break Damage
 ## Normal DOT
+# How to calculate accurately
