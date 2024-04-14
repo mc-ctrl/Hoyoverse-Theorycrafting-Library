@@ -32,20 +32,24 @@ Actually, the Attribute Restraint is to trigger a different Buff from the normal
 # Assault
 *"Dealing Physical Damage to enemies causes Physical Anomaly Buildup, which triggers the Assault effect when enough is accumulated.*<br>
 *Assault: Interrupts the enemy and deals massive Physical Damage."*<br>
-Damage Percentage: 7.13
+Damage Percentage: 7.13.<br>
 # Freeze
 *"Dealing Ice Damage to enemies causes Ice Anomaly Buildup, which triggers the Freeze effect when enough is accumulated.*<br>
 *Freeze: Immobilizes the enemy for a certain period, and triggers Shatter at the end of the effect, dealing Ice damage."*<br>
-HeavyHitCount: 1, Damage Percentage: 7.13.
+HeavyHitCount: 1, Damage Percentage: 7.13.<br>
+Frostbite: Damage Percentage: 7.13.<br>
 # Burn
 *"Dealing Fire damage to enemies accumulates the Fire Attribute Anomaly, which triggers the Burn effect when enough is accumulated.*<br>
 *Burn: Deals continuous Fire damage. Organic enemies are unable to move while Burned."*<br>
-DamageTick: 0.5s, Damage Percentage: 0.5.
+DamageTick: 0.5s, Damage Percentage: 0.5.<br>
+Ignite: DamageTick: 0.5s, Damage Percentage: 0.75.<br>
 # Corruption
 *"Dealing Ether damage to enemies accumulates the Ether Attribute Anomaly, causing the Corruption effect when enough is accumulated.*<br>
 *Corruption: Causes additional Ether damage when attacked. Corrupted Ethereal enemies will also attack both friend and foe."*<br>
-Damage Percentage: 0.625, Damage CD: 0.5s.
+Damage Percentage: 0.625, Damage CD: 0.5s.<br>
+Chaos: Damage Percentage: 0.938, Damage CD: 0.5s.<br>
 # Shock
 *"Dealing Electric damage to enemies accumulates the Electric Attribute Anomaly, which triggers the Shock effect when enough is accumulated.*<br>
 *Shock: Being attacked intermittently triggers additional Electric damage and interrupts enemy actions. Robotic enemies are unable to move while Shocked."*<br>
-Damage Percentage: 2.5, Damage CD: 2s~2s
+Damage Percentage: 2.5, Damage CD: 2s, MaxHitNum: 8.<br>
+Overload: Damage Percentage: 3.75, Damage CD: 2s, Paralysis Duration: 4s, MaxHitNum: 8.<br>
