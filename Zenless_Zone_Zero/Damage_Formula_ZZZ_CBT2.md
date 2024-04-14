@@ -39,7 +39,7 @@ Unless otherwise specified in the skill's attributes, skills will scale with ATK
 ## DMG Bouns Multiplier
 DMG Bouns refers to all percentage-based DMG bounses, including Attribute Type DMG Bounses, as well as special percentage-based DMG bonus based on attacktag(Basic/Special/Ex Special/Sub/Dash/Combo/Assist/Chain Attack, Ultimate, etc.), all DMG bouns and so on. It means **Attacker deals more DMG.**:<br>
 $$DMG\enspace Bouns\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Bouns$$
-You may also find some DMG Bouns for Fighting Style, this is also all DMG Bouns.
+You may find some DMG Bouns for Fighting Style, this is also all DMG Bouns.
 
 ## CRIT Multiplier
 When attack triggers a critical hit, damage will get a crit bouns. Crit Rate is a probability, so:<br>
