@@ -71,7 +71,7 @@ Note: Chaos is not Disorder. -->
 *"Dealing Electric damage to enemies accumulates the Electric Attribute Anomaly, which triggers the Shock effect when enough is accumulated.*<br>
 *Shock: Being attacked intermittently triggers additional Electric damage and interrupts enemy actions. Robotic enemies are unable to move while Shocked."*<br>
 Shock lasts for 6s. Aganist non-robotic enemies, dealing 350% DMG up to 1 time per 1s, up to 5 times.<br>
-<!-- In last test, it deals 350% DMG up to 1 time per 2s, up to 8 times. -->
+<!-- In last test, it deals 250% DMG up to 1 time per 2s, up to 8 times. -->
 For Robotic enemies, it actually triggers Overload:<br>
 Robotic enemy takes 350% DMG and is paralyzed for 4s. When first Paralysis ends, it takes an extra 350% DMG and triggers the second 4s Paralysis. In total, the Robotic enemy takes 350% DMG 2 times and is paralyzed for 8s.
 <!-- In last test, it deals 375% DMG. -->
