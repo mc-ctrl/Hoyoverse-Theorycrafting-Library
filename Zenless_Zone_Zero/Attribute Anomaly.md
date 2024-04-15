@@ -61,7 +61,7 @@ Burn lasts for 6s, it deals 116% Fire DMG based on Applier's ATK per 0.5s in CBT
 *"Dealing Ether damage to enemies accumulates the Ether Attribute Anomaly, causing the Corruption effect when enough is accumulated.*<br>
 *Corruption: Causes additional Ether damage when attacked. Corrupted Ethereal enemies will also attack both friend and foe."*<br>
 Corruption lasts for 6s. Corrupted enemy takes 116% Ether DMG based on Applier's ATK (**but Attacker's AM**) when attacked. A single application of Corruption can deal additional Ether damage up to 1 time per 0.334s.<br>
-<!-- In last test, it takes 50% DMG and damage CD is 0.5s. -->
+<!-- In last test, it takes 62.5% DMG and damage CD is 0.5s. -->
 Corrupted Ethereal enemies will also attack both friend and foe.<br>
 <!-- In last test, Ether counters Energy enemies instead of Ethereal enemies. For Energy enemies, it actually triggers Chaos:<br>
 Energy enemy is unable to move while Chaos. Enemy under Chaos takes 93.8% DMG when attacked. Damage CD is 0.5s.
