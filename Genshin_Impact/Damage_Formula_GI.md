@@ -37,8 +37,8 @@ Note: A single instance of damage cannot exceed 9,999,999. HP loss is not damage
 <!-- /TOC -->
 
 # General Damage Formula
-For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is calculated as:<br>
-$$DMG\enspace =\enspace ((Σ(Base\enspace DMG\enspace ×\enspace Base\enspace DMG\enspace Coefficient)\enspace +\enspace Additive\enspace Base\enspace DMG\enspace Bouns))\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace CRIT\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace ×\enspace Special\enspace Multiplier$$
+For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is generally calculated as:<br>
+$$DMG\enspace =\enspace ((Σ(Base\enspace DMG\enspace ×\enspace Base\enspace DMG\enspace Coefficient)\enspace +\enspace Additive\enspace Base\enspace DMG\enspace Bouns))\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace CRIT\enspace Multiplier\enspace ×\enspace Amplifying\enspace Multiplier\enspace$$
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}

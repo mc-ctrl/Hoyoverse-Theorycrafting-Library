@@ -1,6 +1,7 @@
 **Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When agents or enemies attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
 Note: This article is based on CBT2. It's greatly subject to change.<br>
+You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.wiki/)
 
 <!-- TOC -->
 
@@ -14,7 +15,7 @@ Note: This article is based on CBT2. It's greatly subject to change.<br>
   - [Stun Taken Multiplier](#stun-taken-multiplier)
   - [Special Damage Multiplier](#special-damage-multiplier)
 - [Special Damage Formula](#special-damage-formula)
-  - [Attribute Anomal Damage](#attribute-anomal-damage)
+  - [Attribute Anomaly Damage](#attribute-anomaly-damage)
   - [Other Buff Damage](#other-buff-damage)
 - [How to calculate accurately](#how-to-calculate-accurately)
 
@@ -105,11 +106,15 @@ $$
 If you have played Grace, Billy or Rina in CBT2, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 
 # Special Damage Formula
-In ZZZ, the Special Damage generally refers to Attribute Anomal Damage, but there are some other Buff Damage like Ignite, Overload or Impaired, etc. They have different trigger methods and may have little in common.
+In ZZZ, the Special Damage generally refers to Attribute Anomaly Damage, but there are some other Buff Damage like Impaired. They have different trigger methods and may have little in common.
 
-## Attribute Anomal Damage
-Before calculating Attribute Anomal Damage, you'd better have a knowledge about how to trigger Attribute Anomal Damage: [Attribute Anomal](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomal.md)
-
+## Attribute Anomaly Damage
+Before calculating Attribute Anomaly Damage, you'd better have a knowledge about how to trigger Attribute Anomaly Damage: [Attribute Anomaly](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomaly.md)<br>
+$$DMG\enspace =\enspace Damage\enspace Percentage\enspace ×\enspace ATK\enspace ×\enspace (1\enspace +\enspace Total\enspace AM\enspace /100)\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier\enspace ×\enspace RES\enspace Multiplier\enspace ×\enspace DMG\enspace Taken\enspace Multiplier\enspace ×\enspace Stun\enspace Taken\enspace Multiplier$$
+The Multipliers are just what we introduced in [General Damage Formula](#general-damage-formula).<br>
+Note1: The Attribute Anomaly DMG doesn't CRIT.
+Note2: In Attribute Anomaly DMG's DMG Bouns Multiplier, there are both Attribute DMG Bounses and Attribute Anomaly DMG Bounses.
+Note3: The Level Coefficient in DEF Multiplier is based on the Applier of Attribute Anomaly.
 ## Other Buff Damage
 
 # How to calculate accurately

@@ -6,6 +6,9 @@ PS: All text in italics in this article comes from the official discription in C
 *Electric attacks counter robotic enemies.*<br>
 *Fire attacks counter organic enemies.*<br>
 *Ether attacks counter Ether enemies."*<br>
+
+<div style="display:none">It's not correct now. In last test, Ether attacks counter Energy enemies, but Ice attacks counter Ether enemies.</div>
+
 The above text is ZZZ's official introduction to Attribute Anomaly, it may be modified in subsequent tests.<br>
 So how to accumalate Anomaly Bulidup?<br>
 # Trigger Attribute Anomaly
@@ -28,28 +31,54 @@ In general, the AABT will be increased within reset time after Attribute Anomaly
 The reset time of Ice Anomaly is generally 15s. But it's 30s for Small-2. Other Attribute Anomaly's reset time is always 100s, but it's 30s for Small-2 Physical Anomaly.<br>
 The Level 1 AABT of Small-1 and Small-2 is 600. Medium is 1500, Large is 3000. And the AABT of Physical Anomaly is 1.2 times.<br>
 Everytime AABT levels up, it is increased by 5%. But the AABT is interger. So Level 10 AABT of Large is actually 4649, not 4654. The Level will be kept for reset time if the same Attribute Anomaly is not triggered within this time. After reset time, AABT's Level will be reset to 1.<br>
-Actually, the Attribute Restraint is to trigger a different Buff from the normal one.<br>
+Actually, the Attribute Restraint on Attribute Anomaly is to trigger a different Buff from the normal one.<br>
+
 # Assault
 *"Dealing Physical Damage to enemies causes Physical Anomaly Buildup, which triggers the Assault effect when enough is accumulated.*<br>
-*Assault: Interrupts the enemy and deals massive Physical Damage."*<br>
-Damage Percentage: 7.13.<br>
+*Assault: Interrupts the enemy and deals massive Physical Damage.*<br>
+*Armor Break: Physical Damage Resistance is reduced for a certain period."*<br>
+In CBT2, Assault deals 840% Physical DMG based on Applier's attack.<br>
+<div style="display:none">In last test, it deals 713% DMG.</div>
+The Armor Break lasts for 6s, reducing 10% Physical RES.<br>
+<div style="display:none">Actually, there is a Flinch applied a little before Assault deals DMG in last test instead of Armor Break. I don't know what hoyoverse calls it, there is no information in TextMap_ENTemplateTb. Enemies affected by Flinch will get a Daze Taken Ratio. It seems that Hoyoverse haven't completed it yet.</div>
+
 # Freeze
 *"Dealing Ice Damage to enemies causes Ice Anomaly Buildup, which triggers the Freeze effect when enough is accumulated.*<br>
-*Freeze: Immobilizes the enemy for a certain period, and triggers Shatter at the end of the effect, dealing Ice damage."*<br>
-Heavy Hit Count: 1, Damage Percentage: 7.13.<br>
-Frostbite: Damage Percentage: 7.13.<br>
+*Freeze: Immobilizes the enemy for a certain period, and triggers Shatter at the end of the effect, dealing Ice damage.*<br>
+*Frostbite: Ice Damage Resistance is reduced for a certain period."*<br>
+In CBT2, the Freeze lasts for 6s and triggers Shatter at the end of Freeze. Freeze will end immediately if recieving a Heavy Hit.The Shatter DMG is based on Attacker's Level, you can look up it here: [Shatter Base](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Shatter%20Base.md)<br>
+<div style="display:none">In last tast, it deals 713% DMG.</div>
+Frostbite lasts for 6s, reducing 10% Ice RES.<br> 
+<div style="display:none">Actually, the effect of Frostbite is modified as Crit DMG Taken Ratio in lat test, but there is no information in TextMap_ENTemplateTb.</div>
+
 # Burn
 *"Dealing Fire damage to enemies accumulates the Fire Attribute Anomaly, which triggers the Burn effect when enough is accumulated.*<br>
 *Burn: Deals continuous Fire damage. Organic enemies are unable to move while Burned."*<br>
-DamageTick: 0.5s, Damage Percentage: 0.5.<br>
-Ignite: DamageTick: 0.5s, Damage Percentage: 0.75.<br>
+Burn lasts for 6s, it deals 116% Fire DMG based on Applier's ATK per 0.5s in CBT2. Organic enemies can't move while Burned.<br>
+<div style="display:none">In last test, it deals 50% DMG per 0.5s. For Organic enemies, it actually triggers Ignite, dealing 75% DMG per 0.5s.</div>
+
 # Corruption
 *"Dealing Ether damage to enemies accumulates the Ether Attribute Anomaly, causing the Corruption effect when enough is accumulated.*<br>
 *Corruption: Causes additional Ether damage when attacked. Corrupted Ethereal enemies will also attack both friend and foe."*<br>
-Damage Percentage: 0.625, Damage CD: 0.5s.<br>
-Chaos: Damage Percentage: 0.938, Damage CD: 0.5s.<br>
+Corruption lasts for 6s. Corrupted enemy takes 116% Ether DMG based on Applier's ATK (**but Attacker's AM**) when attacked. A single application of Corruption can deal additional Ether damage up to 1 time per 0.334s.<br>
+<div style="display:none">In last test, it takes 50% DMG and damage CD is 0.5s.</div>
+Corrupted Ethereal enemies will also attack both friend and foe.<br>
+<div style="display:none">In last test, Ether counters Energy enemies instead of Ethereal enemies. For Energy enemies, it actually triggers Chaos:<br>
+Energy enemy is unable to move while Chaos. Enemy under Chaos takes 93.8% DMG when attacked. Damage CD is 0.5s.
+Note: Chaos is not Disorder.</div>
+
 # Shock
 *"Dealing Electric damage to enemies accumulates the Electric Attribute Anomaly, which triggers the Shock effect when enough is accumulated.*<br>
 *Shock: Being attacked intermittently triggers additional Electric damage and interrupts enemy actions. Robotic enemies are unable to move while Shocked."*<br>
-Damage Percentage: 2.5, Damage CD: 2s, Max Hit Number: 8.<br>
-Overload: Damage Percentage: 3.75, Damage CD: 2s, Paralysis Duration: 4s, Max Hit Number: 8.<br>
+Shock lasts for 6s. Aganist non-robotic enemies, dealing 350% DMG up to 1 time per 1s, up to 5 times.<br>
+<div style="display:none">In last test, it deals 350% DMG up to 1 time per 2s, up to 8 times.</div>
+For Robotic enemies, it actually triggers Overload:<br>
+Robotic enemy takes 350% DMG and is paralyzed for 4s. When first Paralysis ends, it takes an extra 350% DMG and triggers the second 4s Paralysis. In total, the Robotic enemy takes 350% DMG 2 times and is paralyzed for 8s.
+<div style="display:none">In last test, it deals 375% DMG.</div>
+
+<div style="display:none"> # Disorder
+Disorder triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
+Hoyoverse added it because the same enemy cam only fall into one Attribute Anomaly at the same time, later Attribute Anomaly will overwrite the earlier one.<br>
+Disorder deals Physical DMG <b>based on the original Attribute Anomaly</b> and accumlates additional Daze.<br>
+Disorder is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
+</div>
