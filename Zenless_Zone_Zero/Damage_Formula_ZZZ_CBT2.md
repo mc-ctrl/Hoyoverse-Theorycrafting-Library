@@ -12,7 +12,7 @@ You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.w
   - [DEF Multiplier](#def-multiplier)
   - [REs Multiplier](#res-multiplier)
   - [Damage Taken Multiplier](#damage-taken-multiplier)
-  - [Stun Taken Multiplier](#stun-taken-multiplier)
+  - [Stun Vulnerability Multiplier](#stun-vulnerability-multiplier)
   - [Special Damage Multiplier](#special-damage-multiplier)
 - [Special Damage Formula](#special-damage-formula)
   - [Attribute Anomaly Damage](#attribute-anomaly-damage)
@@ -23,7 +23,7 @@ You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.w
 
 # General Damage Formula
 For DMG dealt by Skills, Talents or enemy attacks, the DMG is calculated as:<br>
-$$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace Damage\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace Stun\enspace Taken\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
+$$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace Damage\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
 
 ## Base DMG
 $$
@@ -91,13 +91,13 @@ In CBT2, Thunder Metal 4-Pc Set Effect is discribed as, "Upon hitting a Shocked 
 If you have read the discription of Agents' Special Attack or EX Special Attack, you may find the discription like: "Anti_Interrupt is increased while using the skill, and damage taken is reduced by 80%." This is DMG Reduction, but in ZZZ CBT2, the DMG Reduction is just added with DMG Taken. So:
 $$DMG\enspace Taken\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Taken_{Target}\enspace -ΣDMG\enspace Reduction_{Target}$$
 
-## Stun Taken Multiplier
-Stun is one of the most important part of ZZZ's combat system. If your attacks have accumulate enough Daze on a certain enemy. The enemy will be stunned. During stun, the enemy will take more incoming DMG. That is to say, the Stun Taken Multiplier is a special Damage Taken Multiplier, but it multiplies with the general Damage Taken Multiplier.<br>
-Stun Taken Ratio differs between enemies, it's generally 50%, sometimes you can also see 100%. Some Bouns in Hollow Zero can increase the Stun Taken Ratio:<br>
+## Stun Vulnerability Multiplier
+Stun is one of the most important part of ZZZ's combat system. If your attacks have accumulated enough Daze on a certain enemy. The enemy will be stunned. The Stun Ratio is shown below HP. During stun, the enemy will take more incoming DMG. That is to say, the Stun Vulnerability Multiplier is a special Damage Taken Multiplier, but it multiplies with the general Damage Taken Multiplier.<br>
+Stun Vulnerability differs between enemies, it's generally 50%, sometimes you can also see 100%. Some Bouns in Hollow Zero can increase the Stun Taken Ratio:<br>
 
 $$
-\text { Stun Taken Multiplier }={\begin{array}{ll}
-\text { 1 + Stun Taken Ratio } & \text { if Stunned } \\
+\text { Stun Vulnerability Multiplier }={\begin{array}{ll}
+\text { 1 + Stun Vulnerability } & \text { if Stunned, you can find the result below Stun Ratio.} \\
 \text { 1 } & \text { otherwise } 
 \end{array}}
 $$
