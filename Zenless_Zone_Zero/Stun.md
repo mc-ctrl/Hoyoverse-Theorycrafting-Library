@@ -1,0 +1,1 @@
+When enemy is attacked, Daze will be accumlated. Enemy will fall into Stun after accumlating enoungh Daze. The Daze shown below HP is actually the Stun Ratio(Daze/ Max Daze). The Stun Vulnerability Multiplier will be shown below Stun Ratio when Stunned. The information panel of BOSS enemy is displayed in the upper right corner of the screen.<br>
