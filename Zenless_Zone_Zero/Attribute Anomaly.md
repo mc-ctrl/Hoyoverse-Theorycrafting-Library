@@ -79,6 +79,6 @@ Robotic enemy takes 350% DMG and is paralyzed for 4s. When first Paralysis ends,
 <!-- # Disorder
 Disorder triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
 Hoyoverse added it because the same enemy cam only fall into one Attribute Anomaly at the same time, later Attribute Anomaly will overwrite the earlier one.<br>
-Disorder deals Physical DMG <b>based on the original Attribute Anomaly</b> and accumlates additional Daze.<br>
+Disorder deals Physical DMG **based on the original Attribute Anomaly** and accumlates additional Daze.<br>
 Disorder is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
 -->
