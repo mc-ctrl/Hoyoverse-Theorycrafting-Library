@@ -5,11 +5,7 @@ PS: All text in italics in this article comes from the official discription in C
 *"Dealing elemental damage also accumulates Anomaly Buildup that inflicts various Attribute Anomalies on enemies!*<br>
 *Electric attacks counter robotic enemies.*<br>
 *Fire attacks counter organic enemies.*<br>
-*Ether attacks counter Ether enemies."*<br>
-
-It's actually not correct now. In CBT3, Ether attacks counter Energy enemies, but Ice attacks counter Ether enemies.
-
-The above text is ZZZ's official introduction to Attribute Anomaly, it may be modified in subsequent tests.<br>
+*Ether attacks counter Energy enemies."*<br><br>
 So how to accumalate Anomaly Bulidup?<br>
 # Trigger Attribute Anomaly
 ## Accumulation of Anomaly Buildup
