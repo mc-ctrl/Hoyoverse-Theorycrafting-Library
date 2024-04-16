@@ -1,7 +1,7 @@
 
 # Why we need Stun
 
-When enemy is attacked, Daze will be accumlated. Enemy will fall into Stun after accumlating enoungh Daze. The Daze shown below HP is actually the Stun Ratio(Daze Buildup/ Max Stun). The Stun Vulnerability Multiplier will be shown below Stun Ratio when Stunned. The information panel of BOSS enemy is displayed in the upper right corner of the screen.<br>
+When enemy is attacked, Daze will be accumlated. Enemy will fall into Stun after accumlating enoungh Daze. The Daze shown below HP is actually the Stun Ratio(Daze Buildup/ max Stun). The Stun Vulnerability Multiplier will be shown below Stun Ratio when Stunned. The information panel of BOSS enemy is displayed in the upper right corner of the screen.<br>
 **1. Stun applies a extra Vulnerability Multiplier which greatly increases agents' DMG.**<br>
 When there are two or more agents in your team, hitting an enemy stunned with a Heavy Hit can trigger a Combo Attack; generally, the last part of a Normal Attack, Dodge Counter, Special Attack, Ex Special Attack, Combo Attack, and Ultimate will have a Heavy Hit effect. One, two, three times of Combo Attacks can be triggered when attack Normal, Elite, BOSS enemies. <br>
 **2. Stun is a necessary to trigger Combo Attack.**<br>
@@ -24,3 +24,8 @@ It can be easily found that EX Special Skill, Ultimate, Defensive Assist and Ass
 
 # Stun itself
 
+We've spent a lot ink on triggering Stun, not let's look at Stun itself. There are some parameters about enemy's Stun:<br>
+
+## max Stun
+
+First, of course the max Stun. The max Stun differs between enemies, even the enemies with the same name may have different max Stun.<br>
