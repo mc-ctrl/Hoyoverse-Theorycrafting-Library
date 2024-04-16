@@ -93,6 +93,7 @@ $$DMG\enspace Taken\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣD
 
 ## Stun Vulnerability Multiplier
 Stun is one of the most important part of ZZZ's combat system. If your attacks have accumulated enough Daze on a certain enemy. The enemy will be stunned. The Stun Ratio is shown below HP. During stun, the enemy will take more incoming DMG. That is to say, the Stun Vulnerability Multiplier is a special Damage Taken Multiplier, but it multiplies with the general Damage Taken Multiplier.<br>
+Check all things about Stun here: [Stun](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Stun.md) <br>
 Stun Vulnerability differs between enemies, it's generally 50%, sometimes you can also see 100%. Some Bouns in Hollow Zero can increase the Stun Taken Ratio:<br>
 
 $$

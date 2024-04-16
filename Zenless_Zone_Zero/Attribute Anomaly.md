@@ -38,9 +38,9 @@ Everytime AABT levels up, it is increased by 5%. But the AABT is interger. So Le
 *Assault: Interrupts the enemy and deals massive Physical Damage.*<br>
 *Armor Break: Physical Damage Resistance is reduced for a certain period."*<br>
 In CBT2, Assault deals 840% Physical DMG based on Applier's attack.<br>
-<!-- In last test, it deals 713% DMG. -->
+<!-- In last test, it deals 713% DMG. In CBT3, it deals 500% DMG. -->
 The Armor Break lasts for 6s, reducing 10% Physical RES.<br>
-<!-- Actually, there is a Flinch applied a little before Assault deals DMG in last test instead of Armor Break. I don't know what hoyoverse calls it, there is no information in TextMap_ENTemplateTb. Enemies affected by Flinch will get a Daze Taken Ratio. It seems that Hoyoverse haven't completed it yet. -->
+<!-- Actually, there is a Flinch applied a little before Assault deals DMG in last test instead of Armor Break. I don't know what hoyoverse calls it, there is no information in TextMap_ENTemplateTb. Enemies affected by Flinch will get a Daze Taken Ratio. It seems that Hoyoverse haven't completed it yet. From the TextMap_ENTemplateTb in CBT3, I can make sure this status is called Flinch. The Daze Taken Ratio seems to be 7.5% or 10%, idk. -->
 
 # Freeze
 *"Dealing Ice Damage to enemies causes Ice Anomaly Buildup, which triggers the Freeze effect when enough is accumulated.*<br>
@@ -49,7 +49,7 @@ The Armor Break lasts for 6s, reducing 10% Physical RES.<br>
 In CBT2, the Freeze lasts for 6s and triggers Shatter at the end of Freeze. Freeze will end immediately if recieving a Heavy Hit.The Shatter DMG is based on Attacker's Level, you can look up it here: [Shatter Base](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Shatter%20Base.md)<br>
 <!-- In last tast, it deals 713% DMG. -->
 Frostbite lasts for 6s, reducing 10% Ice RES.<br> 
-<!-- Actually, the effect of Frostbite is modified as Crit DMG Taken Ratio in last test, but there is no information in TextMap_ENTemplateTb. -->
+<!-- Actually, the effect of Frostbite is modified as Crit DMG Taken Ratio in last test, but there is no information in TextMap_ENTemplateTb. It is shown in CBT3's TextMap_ENTemplateTb. It seems that the Crit is also 10%, idk. -->
 
 # Burn
 *"Dealing Fire damage to enemies accumulates the Fire Attribute Anomaly, which triggers the Burn effect when enough is accumulated.*<br>
@@ -71,10 +71,10 @@ Note: Chaos is not Disorder. -->
 *"Dealing Electric damage to enemies accumulates the Electric Attribute Anomaly, which triggers the Shock effect when enough is accumulated.*<br>
 *Shock: Being attacked intermittently triggers additional Electric damage and interrupts enemy actions. Robotic enemies are unable to move while Shocked."*<br>
 Shock lasts for 6s. Aganist non-robotic enemies, dealing 350% DMG up to 1 time per 1s, up to 5 times.<br>
-<!-- In last test, it deals 250% DMG up to 1 time per 2s, up to 8 times. -->
+<!-- In last test, it deals 250% DMG up to 1 time per 2s, up to 8 times. In CBT3, it deals 125% DMG up to 1 time per 1s, up to 16 times.-->
 For Robotic enemies, it actually triggers Overload:<br>
 Robotic enemy takes 350% DMG and is paralyzed for 4s. When first Paralysis ends, it takes an extra 350% DMG and triggers the second 4s Paralysis. In total, the Robotic enemy takes 350% DMG 2 times and is paralyzed for 8s.
-<!-- In last test, it deals 375% DMG. -->
+<!-- In last test, it deals 375% DMG. In CBT3, it deals 187.5% DMG up to 1 time per 1s, up to 16 times. The Paralysis Duration is modified to 0. I don't know if it means that Hoyoverse removed the Paralysis, it needs to be tested.-->
 
 <!-- # Disorder
 Disorder triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
