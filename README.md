@@ -9,3 +9,6 @@ Repository contains Genshin Impact, Honkai: Star Rail & Zenless Zone Zero game m
 [Damage Formula](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Honkai_Star_Rail/Damage_Formula_HSR.md)<br>
 ## Zenless Zone Zero
 [Damage Formula](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Damage_Formula_ZZZ_CBT2.md)<br>
+[Attribute Anomaly](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomaly.md)<br><br>
+
+Contact me on Discord (666bj#3659), feel free to ask questions or correct the documents.

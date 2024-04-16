@@ -28,14 +28,14 @@ $$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspa
 ## Base DMG
 $$
 \text { Base DMG }={\begin{array}{ll}
-\text { Skill Scaling Percentage } × \text { ATK } & \text { if skill scales with ATK } \\
-\text { Skill Scaling Percentage } × \text { DEF } & \text { if skill scales with DEF } \\
-\text { Skill Scaling Percentage } × \text { Max HP } & \text { if skill scales with Max HP } 
+\text { DMG Multiplier } × \text { ATK } & \text { if skill scales with ATK } \\
+\text { DMG Multiplier } × \text { DEF } & \text { if skill scales with DEF } \\
+\text { DMG Multiplier } × \text { Max HP } & \text { if skill scales with Max HP } 
 \end{array}}
 $$
 
 **Base DMG** is the amount of DMG resulted from multiplying the skill's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
-Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some abilities may scale with more than one stat.<br>
+Unless otherwise specified in the skill's attributes, skills will scale with ATK. Some skills may scale with more than one stat.<br>
 
 ## DMG Bouns Multiplier
 DMG Bouns refers to all percentage-based DMG bounses, including Attribute Type DMG Bounses, as well as special percentage-based DMG bonus based on attacktag(Basic/Special/Ex Special/Sub/Dash/Combo/Assist/Chain Attack, Ultimate, etc.), all DMG bouns and so on. It means **Attacker deals more DMG.**:<br>

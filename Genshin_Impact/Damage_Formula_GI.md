@@ -34,7 +34,6 @@ Note: A single instance of damage cannot exceed 9,999,999. HP loss is not damage
 - [How to calculate accurately](#how-to-calculate-accurately)
 
 <!-- /TOC -->
-<!-- /TOC -->
 
 # General Damage Formula
 For DMG dealt by Talents, Constellations, Weapon passives, enemy attacks or gadget attacks, the DMG is generally calculated as:<br>
@@ -50,7 +49,7 @@ $$
 $$
 
 **Base DMG** is the amount of DMG resulted from multiplying the talent's scaling with the corresponding stat, before accounting for any damage modifiers.<br>
-Unless otherwise specified in the talent's attributes, talents will scale with ATK. Some abilities may scale with more than one stat.<br>
+Unless otherwise specified in the talent's attributes, talents will scale with ATK. Some talents may scale with more than one stat.<br>
 For example, Nahida's [Elemental Skill](https://genshin-impact.fandom.com/wiki/All_Schemes_to_Know) has a Tri-Karma Purification DMG, this DMG scales with both ATK and EM. If your Nahida has 1400 ATK, 950 EM and Level 10 Elemental Skill, the base DMG of Tri-Karma Purification DMG is calculated as:<br>
 $$Base\enspace DMG\enspace =\enspace 1.8576\enspace ×\enspace 1400\enspace +\enspace 3.7152\enspace ×\enspace 950\enspace =\enspace 6130.08 $$
 ## Base DMG Coefficient
