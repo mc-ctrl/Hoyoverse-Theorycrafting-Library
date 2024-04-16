@@ -45,7 +45,7 @@ The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is al
 *"Dealing Ice damage to enemies accumulates the Ice Attribute Anomaly, which triggers the Freeze and Frostbite effects.*<br> 
 *Freeze prevents taking action for a certain period, and triggers Shatter at the end of the effect, dealing Ice damage.*<br>
 *The Frostbite effect increases the CRIT DMG taken by the target for a period of time."*<br><br>
-*In CBT2, the Freeze lasts for 6s and triggers Shatter at the end of Freeze. You can end the Freeze and trigger Shatter immediately with a Heavy Hit.The Shatter DMG is based on Attacker's Level, you can look up it here: [Shatter Base](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Shatter%20Base.md)*<br>
+*In CBT2, the Freeze lasts for 6s and triggers Shatter at the end of Freeze. You can end the Freeze and trigger Shatter immediately with a Heavy Hit.The Shatter DMG is based on Attacker's Level, you can look up it here: [Shatter Base CBT2](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Shatter%20Base.md)*<br>
 **In CBT3, it deals 500% DMG.**
 <!-- In last tast, it deals 713% DMG. -->
 *In CBT2, Frostbite lasts for 6s, reducing 10% Ice RES.*<br> 
