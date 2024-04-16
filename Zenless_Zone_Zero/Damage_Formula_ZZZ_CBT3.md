@@ -1,7 +1,7 @@
 **Damage is one of the most important part of a game's combat system.** So I pick this part as the first chapter of all the mechanic articles.<br>
 When agents or enemies attack their targets, they generally deal **damage** (abbreviated as **DMG**) based on their own and their targets' attributes.<br>
-Note: This article is based on CBT2. It's greatly subject to change.<br>
-You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.wiki/)
+Note: This article is based on CBT3. It's subject to change.<br>
+You may get some information about ZZZ here: [ZZZ_mana_wiki](https://zzz.mana.wiki/)
 
 <!-- TOC -->
 
@@ -10,7 +10,7 @@ You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.w
   - [DMG Bouns Multiplier](#dmg-bouns-multiplier)
   - [CRIT Multiplier](#crit-multiplier)
   - [DEF Multiplier](#def-multiplier)
-  - [REs Multiplier](#res-multiplier)
+  - [RES Multiplier](#res-multiplier)
   - [Damage Taken Multiplier](#damage-taken-multiplier)
   - [Stun Vulnerability Multiplier](#stun-vulnerability-multiplier)
   - [Special Damage Multiplier](#special-damage-multiplier)
@@ -23,7 +23,7 @@ You may get some information about CBT2 here: [ZZZ_mana_wiki](https://zzz.mana.w
 
 # General Damage Formula
 For DMG dealt by Skills, Talents or enemy attacks, the DMG is calculated as:<br>
-$$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace REs\enspace Multiplier_{Target}\enspace ×\enspace Damage\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
+$$DMG\enspace =\enspace Base\enspace DMG_{Attacker}\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier_{Attacker}\enspace ×\enspace CRIT\enspace Multiplier_{Attacker}\enspace ×\enspace DEF\enspace Multiplier_{Target}\enspace ×\enspace RES\enspace Multiplier_{Target}\enspace ×\enspace Damage\enspace Taken\enspace Multiplier_{Target}\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier_{Target} ×\enspace Special\enspace Multiplier\enspace$$
 
 ## Base DMG
 $$
@@ -74,21 +74,21 @@ With the fitting, we can make sure that the Level Coefficient Curve is a quadrat
 Unlike GI or HSR, the DEF of Enemy differs:<br>
 Different enemy has different Base DEF, even the Scaling Curve differs between enemies. You can even find the enemies with same name have different defence.<br>
 Considering that the game is still in beta, I'm not interested in compiling these data. You may see these data after CBT3 or Open Test.<br>
-During CBT2, Attackers have properties called PEN and PEN Ratio. These are DEF Penerate, which will affect DEF<sub>Effective</sub>. And the Target may have DEF Reduction:<br>
+During CBT3, Attackers have properties called PEN and PEN Ratio. These are DEF Penerate, which will affect DEF<sub>Effective</sub>. And the Target may have DEF Reduction:<br>
 $$DEF_{Effective}\enspace =\enspace DEF\enspace ×\enspace (1\enspace -\enspace DEF\enspace Reduction_{Target}\enspace) ×\enspace (1\enspace -\enspace PEN\enspace Ratio_{Attacker}\enspace) -\enspace PEN$$
-For example, in CBT2, one of Advanced Stats of Disk Drive Ⅴ is PEN Ratio, for the S Tier max Level, it's 30%. The Boss of Chapter 1, Dead End Butcher has 1127.48 DEF at Level 60. It means this PEN Ratio Advanced Stats can offer agents a 21.36% DMG Bouns. It's not suitable for game numberical setup. The better DMG Bouns is about 15% for CBT2's ZZZ.<br>
+For example, in CBT3, one of Advanced Stats of Disk Drive Ⅴ is PEN Ratio, for the S Tier max level, it's 24%. The Boss of Chapter 1, Dead End Butcher has 952.8 DEF at Level 60. It means this PEN Ratio Advanced Stats can offer agents a 15.06% DMG Bouns.<br>
 
-## REs Multiplier
-REs Multiplier is the multiplier that Resistances(abbreviated as REs) affect incoming damage. Targets may have different Attribute Type RE. It's calculated as:
-$$REs\enspace Multiplier\enspace =\enspace 1\enspace -\enspace REs_{Effective}$$
-$$REs_{Effective}\enspace =\enspace Attribute\enspace Type\enspace REs\enspace +\enspace All\enspace Type\enspace REs\enspace -\enspace REs\enspace Reduction_{Target}\enspace -\enspace REs\enspace Ignored_{Attacker}$$
-For example, the Dead End Butcher has 10% Electric RE and Fire RE, -20% Ether RE and -10% Physical RE in CBT2. We can easily choose suitable Agents for battle.
+*PS: Other special Advanced Stats of Disk Drive Ⅴ are Attribute Bounses, they are just 30% at max level.*
+
+## RES Multiplier
+RES Multiplier is the multiplier that Resistances(abbreviated as RES) affect incoming damage. Targets may have different Attribute Type RE. It's calculated as:
+$$RES\enspace Multiplier\enspace =\enspace 1\enspace -\enspace RES_{Effective}$$
+$$RES_{Effective}\enspace =\enspace Attribute\enspace Type\enspace RES\enspace +\enspace All\enspace Type\enspace RES\enspace -\enspace RES\enspace Reduction_{Target}\enspace -\enspace RES\enspace Ignored_{Attacker}$$
+For example, the Newborn Dead End Butcher has -20% Ice RES and -10% Ether RES in CBT3. Unknown Corruption Complex has 20% Fire RES and 20% Elec RES. We can easily choose suitable Agents for battle.
 
 ## Damage Taken Multiplier
 DMG Taken is just like DMG Bouns. DMG Bouns means Attacker deals more DMG, **DMG Taken means Target takes more DMG**. So you can easily distinguish between them by description:<br>
-$$DMG\enspace Taken\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Taken$$
-In CBT2, Thunder Metal 4-Pc Set Effect is discribed as, "Upon hitting a Shocked enemy, the struck target takes 30% more damage for 6s. This effect does not stack." This is an example for Damage Taken.
-If you have read the discription of Agents' Special Attack or EX Special Attack, you may find the discription like: "Anti_Interrupt is increased while using the skill, and damage taken is reduced by 80%." This is DMG Reduction, but in ZZZ CBT2, the DMG Reduction is just added with DMG Taken. So:
+If you have read the discription of Agents' Special Attack or EX Special Attack, you may find the discription like: "Anti_Interrupt is increased while using the skill, and damage taken is reduced by XX%." This is DMG Reduction, but in ZZZ CBT3, the DMG Reduction is just added with DMG Taken. So:
 $$DMG\enspace Taken\enspace Multiplier\enspace =\enspace 1\enspace +\enspace ΣDMG\enspace Taken_{Target}\enspace -ΣDMG\enspace Reduction_{Target}$$
 
 ## Stun Vulnerability Multiplier
@@ -104,7 +104,7 @@ $$
 $$
 
 ## Special Damage Multiplier
-If you have played Grace, Billy or Rina in CBT2, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
+If you have played Grace, Billy or Rina in CBT3, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 
 # Special Damage Formula
 In ZZZ, the Special Damage generally refers to Attribute Anomaly Damage, but there are some other Buff Damage like Impaired. They have different trigger methods and may have little in common.
