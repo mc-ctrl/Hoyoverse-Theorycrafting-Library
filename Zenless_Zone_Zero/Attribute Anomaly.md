@@ -10,7 +10,7 @@ So how to accumalate Anomaly Bulidup?<br>
 # Trigger Attribute Anomaly
 ## Accumulation of Anomaly Buildup
 As you see, dealing elemental damage will accumulate Anomaly Bulidup. Certain Elemental DMG accumlate certain Attribute Anomaly Buildup.<br>
-In ZZZ, most agent attacks will accumlate Attribute Anomaly Buildup, and some attack from Bangboo will also accumlate certain Attribute Anomaly(This is generally written down in the description of Bangboo's skill).<br>
+In ZZZ, most agent attacks will accumlate Attribute Anomaly Buildup, and some attack from Bangboo will also accumlate certain Attribute Anomaly( This is generally written down in the description of Bangboo's skill).<br>
 Different skills accumlate different amount of Anomaly Bulidup. The EX Special Attack, Chain Attack, Ultimate and Assist Follow-up generally accumlates a great amount of Anomaly Buildup. For example, Grace's EX Special Attack accumlates 8.6 times as much Anomaly Bulidup as her Special Attack, but only deals 3.6 times DMG. So it's important to trigger more EX Special Attack, Chain Attack, Ultimate and Assist Follow-up.<br>
 The amount of Anomaly Buildup is subject to change in tests, so the data is not displayed here.<br>
 Note: If agent's Attribute is not Physical, she doesn't accumlate Physical Anomaly Buildup when dealing Physical DMG.<br>
