@@ -60,6 +60,8 @@ $$
 The expectation of CRIT Multiplier is deduced as:<br>
 $$E(CRIT)\enspace =\enspace 1\enspace ×\enspace (1\enspace -\enspace CRIT\enspace Rate_{Effective})\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace (1\enspace +\enspace CRIT\enspace DMG)\enspace =\enspace 1\enspace +\enspace CRIT\enspace Rate_{Effective}\enspace ×\enspace CRIT\enspace DMG$$
 
+**When CRIT, the damage numbers will be displayed in a more obvious way (You will find !! behind damage numbers).**
+
 ## DEF Multiplier
 DEF Multiplier is the multiplier that Defence(abbreviated DEF) reduces incoming damage, it's calculated as:<br>
 $$DEF\enspace DMG\enspace Reduction\enspace =\enspace \frac{DEF_{Effective}}{DEF_{Effective}\enspace +\enspace Level\enspace Coefficient_{Attacker}}$$
@@ -86,6 +88,9 @@ $$RES\enspace Multiplier\enspace =\enspace 1\enspace -\enspace RES_{Effective}$$
 $$RES_{Effective}\enspace =\enspace Attribute\enspace Type\enspace RES\enspace +\enspace All\enspace Type\enspace RES\enspace -\enspace RES\enspace Reduction_{Target}\enspace -\enspace RES\enspace Ignored_{Attacker}$$
 For example, the Newborn Dead End Butcher has -20% Ice RES and -10% Ether RES in CBT3. Unknown Corruption Complex has 20% Fire RES and 20% Elec RES. We can easily choose suitable Agents for battle.
 
+**When an enemy has a low resistance (≤-20%) to a particular attribute, the damage number for that attribute will flash in white. When an enemy has a high resistance (≥20%) to a particular attribute, the damage number for that attribute will become gray.**
+**Organic enemies are weak to Fire, Ethereal enemies are weak to Ice, Robotic enemies are weak to Electric, and Energy enemies are weak to Ether.**
+
 ## Damage Taken Multiplier
 DMG Taken is just like DMG Bouns. DMG Bouns means Attacker deals more DMG, **DMG Taken means Target takes more DMG**. So you can easily distinguish between them by description:<br>
 If you have read the discription of Agents' Special Attack or EX Special Attack, you may find the discription like: "Anti_Interrupt is increased while using the skill, and damage taken is reduced by XX%." This is DMG Reduction, but in ZZZ CBT3, the DMG Reduction is just added with DMG Taken. So:
@@ -107,7 +112,7 @@ $$
 If you have played Grace, Billy or Rina in CBT3, you may notice that these agents have a significant attenuation of damage at a long distance. That is Distance Attenuation. Hoyoverse made this to limit range agents. Unfortunately, I haven't figured out how the damage attenuation works and if there are other attenuations. What we know is that Grace has a different attenuation with Billy and Rina.
 
 # Special Damage Formula
-In ZZZ, the Special Damage generally refers to Attribute Anomaly Damage, but there are some other Buff Damage like Impaired. They have different trigger methods and may have little in common.
+In ZZZ, the Special Damage generally refers to Attribute Anomaly Damage, but there are some other Buff Damage like Impaired. Exiled. They have different trigger methods and may have little in common.
 
 ## Attribute Anomaly Damage
 Before calculating Attribute Anomaly Damage, you'd better have a knowledge about how to trigger Attribute Anomaly Damage: [Attribute Anomaly](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomaly.md)<br>

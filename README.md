@@ -12,3 +12,4 @@ Repository contains Genshin Impact, Honkai: Star Rail & Zenless Zone Zero game m
 [Attribute Anomaly](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomaly.md)<br><br>
 
 Contact me on Discord (666bj#3659), feel free to ask questions or correct the documents.
+中文玩家可以加[交流群](https://qm.qq.com/q/MWZjYcqf2o)。
