@@ -38,7 +38,7 @@ The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is al
 **In CBT3, it deals 713% DMG.**<br>
 <!-- In last test, it deals 713% DMG. -->
 *In CBT2, the additional effect of Physical Anomaly is called Armor Break. The Armor Break lasts for 6s, reducing 10% Physical RES.*<br>
-**In CBT3, there is a Flinch instead. The Daze Taken Ratio seems to be 7.5% or 10%, idk. It needs to be tested.**
+**In CBT3, there is a Flinch instead. The Daze Taken Ratio is 10%, it lasts for 10s.**
 <!-- Actually, there is a Flinch applied a little before Assault deals DMG in last test instead of Armor Break. I don't know what hoyoverse calls it, there is no information in TextMap_ENTemplateTb. Enemies affected by Flinch will get a Daze Taken Ratio. It seems that Hoyoverse haven't completed it yet. -->
 
 # Freeze
@@ -46,17 +46,17 @@ The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is al
 *Freeze prevents taking action for a certain period, and triggers Shatter at the end of the effect, dealing Ice damage.*<br>
 *The Frostbite effect increases the CRIT DMG taken by the target for a period of time."*<br><br>
 *In CBT2, the Freeze lasts for 6s and triggers Shatter at the end of Freeze. You can end the Freeze and trigger Shatter immediately with a Heavy Hit.The Shatter DMG is based on Attacker's Level, you can look up it here: [Shatter Base CBT2](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Shatter%20Base.md)*<br>
-**In CBT3, it deals 500% DMG.**
+**In CBT3, Shatter deals 500% DMG. The Freeze lasts for 10s. Shatter still can be triggered with a Heavy Hit.**
 <!-- In last tast, it deals 713% DMG. -->
 *In CBT2, Frostbite lasts for 6s, reducing 10% Ice RES.*<br> 
-**In CBT3, the effect of Frostbite is modified as Crit DMG Taken Ratio, it seems to 10%, idk.**
+**In CBT3, the effect of Frostbite is modified as Crit DMG Taken Ratio, it's 10%.**
 <!-- Actually, the effect of Frostbite is modified as Crit DMG Taken Ratio in last test, but there is no information in TextMap_ENTemplateTb.-->
 
 # Burn
 *"Dealing Fire damage to enemies accumulates Fire Anomaly Buildup, which triggers the Burn effect.*<br>
 *The Burn effect deals continuous Fire Damage for a period of time. Inflicting the Burn effect can interrupt organic enemies."*<br><br>
 *In CBT2, Burn lasts for 6s, it deals 116% Fire DMG based on Applier's ATK per 0.5s. Organic enemies can't move while Burned.*<br>
-**In CBT3, it deals 50% DMG per 0.5s. Aganist Organic enemies, it actually triggers Ignite, dealing 75% per 0.5s.**
+**In CBT3, it deals 50% DMG per 0.5s. The Burn lasts for 10s. Aganist Organic enemies, it actually triggers Ignite, dealing 75% per 0.5s.**
 <!-- In last test, it deals 50% DMG per 0.5s. For Organic enemies, it actually triggers Ignite, dealing 75% DMG per 0.5s. -->
 
 # Corruption
@@ -64,10 +64,10 @@ The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is al
 *The Corruption causes the target to suffer additional Ether damage when attacked for a period of time.*<br>
 *Inflicting the Corruption effect can interrupt Energy enemies.*<br><br>
 *In CBT2, Corruption lasts for 6s. Corrupted enemy takes 116% Ether DMG based on Applier's ATK (**but Attacker's AM**) when attacked. A single application of Corruption can deal additional Ether damage up to 1 time per 0.334s.*<br>
-**In CBT3, it deals 62.5% DMG up to 1 time per 0.5s.**
+**In CBT3, it deals 62.5% DMG up to 1 time per 0.5s. Corruption lasts for 10s.**
 <!-- In last test, it takes 62.5% DMG and damage CD is 0.5s. -->
 *In CBT2, Ether attacks counter Ethereal enemies, it actually triggers Chaos: Chaos has an additional effect: Corrupted Ethereal enemies will attack both friend and foe.*<br>
-**In CBT3, Ether attacks counter Energy enemies, it eventually triggers Chaos: It takes 93.8% DMG when attacked up to 1 time per 0.5s.**
+**In CBT3, Ether attacks counter Energy enemies, it eventually triggers Chaos: It takes 93.8% DMG when attacked up to 1 time per 0.5s. The Chaos lats for 10s.**
 <!-- In last test, Ether counters Energy enemies instead of Ethereal enemies. For Energy enemies, it actually triggers Chaos:<br>
 Energy enemy is unable to move while Chaos. Enemy under Chaos takes 93.8% DMG when attacked. Damage CD is 0.5s.
 Note: Chaos is not Dysfunction. -->
@@ -77,16 +77,16 @@ Note: Chaos is not Dysfunction. -->
 *The Shock effect causes the target to intermittently suffer additional Electric DMG for a period of time when attacked.*
 *Shock can interrupt actions for Robotic enemies.*<br><br>
 *In CBT2, Shock lasts for 6s. Aganist non-robotic enemies, it deals 350% DMG up to 1 time per 1s, up to 5 times.*<br>
-**In CBT3, it deals 125% DMG up to 1 time per 1s, up to 16 times.**<br>
+**In CBT3, it deals 125% DMG up to 1 time per 1s, up to 16 times. The Shock lasts for 10s.**<br>
 <!-- In last test, it deals 250% DMG up to 1 time per 2s, up to 8 times.-->
 For Robotic enemies, it actually triggers Overload:<br>
 *In CBT2, Robotic enemy takes 350% DMG and is paralyzed for 4s. When first Paralysis ends, it takes an extra 350% DMG and triggers the second 4s Paralysis. In total, the Robotic enemy takes 350% DMG 2 times and is paralyzed for 8s.*<br>
-**In CBT3, it deals 187.5% DMG up to 1 time per 1s, up to 16 times. The Paralysis Duration is modified to 0. I don't know if it means that Hoyoverse removed the Paralysis, it needs to be tested.**
+**In CBT3, it deals 187.5% DMG up to 1 time per 1s, up to 16 times. The Paralysis Duration is modified to 0. The Overload lasts for 10s.**
 <!-- In last test, it deals 375% DMG.-->
 
 # Dysfunction
 *Applying another type of Attribute Anomaly to an enemy that has already been afflicted with another overrides the original, and causes the Dysfunction effect.*<br> 
 *The Dysfunction effect is calculated based on the original state, dealing additional damage and accumulating Daze.*<br><br>
 Dysfunction triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
-Dysfunction deals Physical DMG **based on the original Attribute Anomaly** and accumlates additional Daze.<br>
+Dysfunction deals DMG **based on the original Attribute Anomaly** and accumlates additional Daze.<br>
 Dysfunction is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
