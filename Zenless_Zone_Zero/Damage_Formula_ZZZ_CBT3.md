@@ -116,7 +116,8 @@ In ZZZ, the Special Damage generally refers to Attribute Anomaly Damage, but the
 
 ## Attribute Anomaly Damage
 Before calculating Attribute Anomaly Damage, you'd better have a knowledge about how to trigger Attribute Anomaly Damage: [Attribute Anomaly](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Zenless_Zone_Zero/Attribute%20Anomaly.md)<br>
-$$DMG\enspace =\enspace Damage\enspace Percentage\enspace ×\enspace ATK\enspace ×\enspace (1\enspace +\enspace Total\enspace AM\enspace /100)\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier\enspace ×\enspace RES\enspace Multiplier\enspace ×\enspace DMG\enspace Taken\enspace Multiplier\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier$$
+$$DMG\enspace =\enspace Damage\enspace Percentage\enspace ×\enspace ATK\enspace ×\enspace  Total\enspace AM\enspace /100\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier\enspace ×\enspace RES\enspace Multiplier\enspace ×\enspace DMG\enspace Taken\enspace Multiplier\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier\enspace ×\enspace Level\enspace Multiplier$$
+$$Level\enspace Multiplier\enspace =\enspace 1\enspace +\enspace 0.025\enspace ×\enspace Level$$
 The Multipliers are just what we introduced in [General Damage Formula](#general-damage-formula).<br>
 Note1: The Attribute Anomaly DMG doesn't CRIT.
 Note2: In Attribute Anomaly DMG's DMG Bouns Multiplier, there are both Attribute DMG Bounses and Attribute Anomaly DMG Bounses.
