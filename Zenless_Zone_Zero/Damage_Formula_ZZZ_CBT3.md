@@ -119,10 +119,10 @@ Before calculating Attribute Anomaly Damage, you'd better have a knowledge about
 $$DMG\enspace =\enspace Damage\enspace Percentage\enspace ×\enspace ATK\enspace ×\enspace  Total\enspace AM\enspace /100\enspace ×\enspace DMG\enspace Bouns\enspace Multiplier\enspace ×\enspace DEF\enspace Multiplier\enspace ×\enspace RES\enspace Multiplier\enspace ×\enspace DMG\enspace Taken\enspace Multiplier\enspace ×\enspace Stun\enspace Vulnerability\enspace Multiplier\enspace ×\enspace Level\enspace Multiplier$$
 $$Level\enspace Multiplier\enspace =\enspace 1\enspace +\enspace 0.025\enspace ×\enspace Level$$
 The Multipliers are just what we introduced in [General Damage Formula](#general-damage-formula).<br>
-Note1: The Attribute Anomaly DMG doesn't CRIT.
-Note2: In Attribute Anomaly DMG's DMG Bouns Multiplier, there are both Attribute DMG Bounses and Attribute Anomaly DMG Bounses.
-Note3: The Level Coefficient in DEF Multiplier is based on the Applier of Attribute Anomaly.
-Note4: The DOT DMG from Attribute Anomaly are snapshotted.
+Note1: The Attribute Anomaly DMG doesn't CRIT.<br>
+Note2: In Attribute Anomaly DMG's DMG Bouns Multiplier, there are both Attribute DMG Bounses and Attribute Anomaly DMG Bounses.<br>
+Note3: The Level Coefficient in DEF Multiplier is based on the Applier of Attribute Anomaly.<br>
+Note4: The DOT DMG from Attribute Anomaly are snapshotted.<br>
 ## Other Buff Damage
 
 # How to calculate accurately
