@@ -1,7 +1,7 @@
 Repository contains Genshin Impact, Honkai: Star Rail & Zenless Zone Zero game mechanics. Under construction...<br>
 原神、崩坏：星穹铁道和绝区零的机制研究合集。施工中...<br>
 
-# Catalogs ([中文目录看这里](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Simplified_Chinese/%E7%9B%AE%E5%BD%95.md)):
+# Catalogs ([中文目录看这里](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/%E7%9B%AE%E5%BD%95.md)):
 
 ## Genshin Impact
 [Damage Formula](https://github.com/mc-ctrl/Hoyoverse-Theorycrafting-Library/blob/main/Genshin_Impact/Damage_Formula_GI.md)<br>
