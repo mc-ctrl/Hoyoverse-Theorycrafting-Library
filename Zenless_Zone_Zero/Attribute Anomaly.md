@@ -1,13 +1,17 @@
 Attribute Anomaly System is a special part of ZZZ's combat System. Through formation of reasonable Team to trigger Attribute Anomaly can effectively improve the combat efficiency.<br>
 In this chapter, I will introduce how to trigger Attribute Anomaly and calculate the Attribute Anomaly DMG.<br>
 PS: All text in italics in this article comes from the official discription in CBT3.
+
 # What is Attribute Anomaly
+
 *"Dealing elemental damage also accumulates Anomaly Buildup that inflicts various Attribute Anomalies on enemies!*<br>
 *Electric attacks counter robotic enemies.*<br>
 *Fire attacks counter organic enemies.*<br>
 *Ether attacks counter Energy enemies."*<br><br>
 So how to accumalate Anomaly Bulidup?<br>
+
 # Trigger Attribute Anomaly
+
 ## Accumulation of Anomaly Buildup
 As you see, dealing elemental damage will accumulate Anomaly Bulidup. Certain Elemental DMG accumlate certain Attribute Anomaly Buildup.<br>
 In ZZZ, most agent attacks will accumlate Attribute Anomaly Buildup, and some attack from Bangboo will also accumlate certain Attribute Anomaly( This is generally written down in the description of Bangboo's skill).<br>
@@ -18,16 +22,16 @@ There is property called Anomaly Rate Bonus, this property is directly multiplic
 In CBT2, there was Attribute Anomaly RES, which only affects the Attribute Anomaly Accumalation, not Attribute Anomaly DMG. In CBT3, it has been fixed as Attribute Anomaly Buildup RES.<br>
 The amount of Anomaly Buildup is calculated as:<br>
 $$Anomaly\enspace Buildup_{Eventual}\enspace =\enspace Anomaly\enspace Buildup_{Original}\enspace ×\enspace AM/\enspace 100\enspace ×\enspace (1\enspace +\enspace Anomaly\enspace Rate\enspace Bouns)\enspace ×\enspace (1\enspace -\enspace Attribute\enspace Anomaly\enspace Buildup\enspace RES)$$
+
 ## Triggers
 When the accumulation of Anomaly Buildup is enough, Attribute Anomaly is triggered. So what is enough?<br>
-The triggers can be catagorized into four groups, Small, Medium and Large.<br>
-Different Attribute of the same enemy can be in different group.<br>
-The group will determine the amount of Anomaly Buildup to trigger(abbreviated as **AABT**) and the reset time.<br>
-In general, the AABT will be increased within reset time after Attribute Anomaly is triggered. It can be increased for 9 times, you can call it Level 1~10.<br>
+The triggers can be catagorized into three groups, Small, Medium and Large.<br>
+The group will determine the threshold of Anomaly Buildup to trigger and the reset time.<br>
+In general, the threshold will be increased within reset time after Attribute Anomaly is triggered. It can be increased for 9 times, you can call it Level 1~10.<br>
 The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is always 100s.<br>
-**In CBT3, Level 1 AABT of Small is 600. Medium is 2250, Large is 3000. And the AABT of Physical Anomaly is 1.2 times.**<br>
-**Everytime AABT levels up, it multiplies 1.02. But the AABT is interger. So Level 10 AABT of Large is actually 3581, not 3585. The Level will be kept for reset time if the same Attribute Anomaly is not triggered within this time. After reset time, AABT's will be reset to Level 1.**<br>
-*In CBT2, the Level 1 AABT of Small is 700, Medium for 1800, Large for 2500. And it multiplies 1.2 when levels up after level 5.*<br>
+**In CBT3, Level 1 threshold of Small is 600. Medium is 2250, Large is 3000. And the threshold of Physical Anomaly is 1.2 times.**<br>
+**Everytime threshold levels up, it multiplies 1.02. But the threshold is interger. So Level 10 threshold of Large is actually 3581, not 3585. The Level will be kept for reset time if the same Attribute Anomaly is not triggered within this time. After reset time, threshold's will be reset to Level 1.**<br>
+*In CBT2, the Level 1 threshold of Small is 700, Medium for 1800, Large for 2500. And it multiplies 1.2 when levels up after level 5.*<br>
 <!-- In last test, it's 600, 1500, 3000. It multiplies 1.05 when levels up. -->
 **Actually, the Attribute Restraint on Attribute Anomaly is to trigger a different Buff from the normal one.**<br>
 
