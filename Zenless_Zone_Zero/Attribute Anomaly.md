@@ -88,5 +88,5 @@ For Robotic enemies, it actually triggers Overload:<br>
 *Applying another type of Attribute Anomaly to an enemy that has already been afflicted with another overrides the original, and causes the Dysfunction effect.*<br> 
 *The Dysfunction effect is calculated based on the original state, dealing additional damage and accumulating Daze.*<br><br>
 Dysfunction triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
-Dysfunction deals DMG **based on the original Attribute Anomaly** and accumlates additional Daze.<br>
+Dysfunction deals DMG **based on the rest of original Attribute Anomaly** and accumlates additional Daze.<br>
 Dysfunction is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
