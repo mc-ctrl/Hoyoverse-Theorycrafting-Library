@@ -70,7 +70,7 @@ The reset time of Ice Anomaly is 15s. Other Attribute Anomaly's reset time is al
 **In CBT3, Ether attacks counter Energy enemies, it eventually triggers Chaos: It takes 93.8% DMG when attacked up to 1 time per 0.5s. The Chaos lats for 10s.**
 <!-- In last test, Ether counters Energy enemies instead of Ethereal enemies. For Energy enemies, it actually triggers Chaos:<br>
 Energy enemy is unable to move while Chaos. Enemy under Chaos takes 93.8% DMG when attacked. Damage CD is 0.5s.
-Note: Chaos is not Dysfunction. -->
+Note: Chaos is not Disorder. -->
 
 # Shock
 *Dealing Electric DMG to enemies accumulates Electric Anomaly Buildup, which triggers the Shock effect.*<br>
@@ -84,9 +84,9 @@ For Robotic enemies, it actually triggers Overload:<br>
 **In CBT3, it deals 187.5% DMG up to 1 time per 1s, up to 16 times. The Paralysis Duration is modified to 0. The Overload lasts for 10s.**
 <!-- In last test, it deals 375% DMG.-->
 
-# Dysfunction
-*Applying another type of Attribute Anomaly to an enemy that has already been afflicted with another overrides the original, and causes the Dysfunction effect.*<br> 
-*The Dysfunction effect is calculated based on the original state, dealing additional damage and accumulating Daze.*<br><br>
-Dysfunction triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
-Dysfunction deals DMG **based on the rest of original Attribute Anomaly** and accumlates additional Daze.<br>
-Dysfunction is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
+# Disorder
+*Applying another type of Attribute Anomaly to an enemy that has already been afflicted with another overrides the original, and causes the Disorder effect.*<br> 
+*The Disorder effect is calculated based on the original state, dealing additional damage and accumulating Daze.*<br><br>
+Disorder triggers when enemy under Attribute Anomaly is triggered another Attribute Anomaly.<br>
+Disorder deals DMG **based on the rest of original Attribute Anomaly** and accumlates additional Daze.<br>
+Disorder is added to speed up the rate of DMG from Attribute Anomalies and encourage players to trigger more Attribute Anomalies.
