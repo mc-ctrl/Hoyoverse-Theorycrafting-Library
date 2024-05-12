@@ -17,7 +17,7 @@ Note: If agent's Attribute is not Physical, she doesn't accumlate Physical Anoma
 There is property called Anomaly Rate Bonus, this property is directly multiplicative with skill's amount of Anomaly Buildup.<br>
 In CBT2, there was Attribute Anomaly RES, which only affects the Attribute Anomaly Accumalation, not Attribute Anomaly DMG. In CBT3, it has been fixed as Attribute Anomaly Buildup RES.<br>
 The amount of Anomaly Buildup is calculated as:<br>
-$$Anomaly\enspace Buildup_{Eventual}\enspace =\enspace Anomaly\enspace Buildup_{Original}\enspace ×\enspace (1\enspace +\enspace Anomaly\enspace Rate\enspace Bouns)\enspace ×\enspace (1\enspace -\enspace Attribute\enspace Anomaly\enspace Buildup\enspace RES)$$
+$$Anomaly\enspace Buildup_{Eventual}\enspace =\enspace Anomaly\enspace Buildup_{Original}\enspace ×\enspace AM/\enspace 100\enspace ×\enspace (1\enspace +\enspace Anomaly\enspace Rate\enspace Bouns)\enspace ×\enspace (1\enspace -\enspace Attribute\enspace Anomaly\enspace Buildup\enspace RES)$$
 ## Triggers
 When the accumulation of Anomaly Buildup is enough, Attribute Anomaly is triggered. So what is enough?<br>
 The triggers can be catagorized into four groups, Small, Medium and Large.<br>

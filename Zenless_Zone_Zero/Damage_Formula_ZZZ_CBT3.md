@@ -121,7 +121,7 @@ $$Level\enspace Multiplier\enspace =\enspace 1\enspace +\enspace 0.025\enspace Ã
 The Multipliers are just what we introduced in [General Damage Formula](#general-damage-formula).<br>
 Note1: The Attribute Anomaly DMG doesn't CRIT.<br>
 Note2: In Attribute Anomaly DMG's DMG Bouns Multiplier, there are both Attribute DMG Bounses and Attribute Anomaly DMG Bounses.<br>
-Note3: The Level Coefficient in DEF Multiplier is based on the Applier of Attribute Anomaly.<br>
+Note3: Attribute Anomaly DMG is based on the attributes of the agents involved in the Anomaly Buildup and is distributed in proportion to the contribution of the Anomaly Buildup they cause.<br>
 Note4: The DOT DMG from Attribute Anomaly are snapshotted.<br>
 ## Other Buff Damage
 

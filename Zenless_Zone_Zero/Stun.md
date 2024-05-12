@@ -14,7 +14,7 @@ Enemy is unable to move when Stunned. Stun can interrupt all enemy attacks.<br>
 
 The Stun comes from the accumlation of Daze. So the key to trigger Stun is increasing the Daze efficience. You can easily check the Daze Multiplier in agent's Skill Panel. It's usually shown below DMG Multiplier. The Daze Multiplier multiplies with agent's Impact. Agent's Impact is shown on Stats Panel, you can easily check it both in and out of combat.<br>
 Daze Bouns affacts the Daze Bulidup. Some Buffs will increase enemies' Daze RES, and you may find some Daze RES on Fighting Styles (Cut, Pierce and Strike) or Attribute. Some debuffs are discribed as, "Enemies accumulate more Daze." It's not Daze Taken Ratio, but it decreases Daze RES. So the Daze Buidup is calculated as:<br>
-$$Daze\enspace Buildup\enspace =\enspace Σ[Impact\enspace ×\enspace Daze\enspace Multiplier\enspace ×\enspace (1\enspace +\enspace Daze\enspace Bouns)\enspace ×\enspace (1\enspace +\enspace Daze\enspace RES\enspace -\enspace Daze\enspace RES\enspace Decrease)]$$
+$$Daze\enspace Buildup\enspace =\enspace Σ[Impact\enspace ×\enspace Daze\enspace Multiplier\enspace ×\enspace (1\enspace +\enspace Daze\enspace Bouns\enspace -\enspace Daze\enspace Decrease)\enspace ×\enspace (1\enspace +\enspace Daze\enspace RES\enspace -\enspace Daze\enspace RES\enspace Decrease)]$$
 The Stun Ratio shown below is calculated as:<br>
 $$Stun\enspace Ratio\enspace =\enspace Daze\enspace Buidup/\enspace max\enspace Stun$$
 For the certain enemy, the max Stun is generally fixed. So to trigger more Stun is to accumlate more Daze Buildup.<br>
